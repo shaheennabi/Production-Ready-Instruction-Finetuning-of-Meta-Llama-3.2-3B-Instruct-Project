@@ -1,4 +1,4 @@
-# 🎇✨ Production-Ready Finetuning of Meta Llama 3.1-8B 🎆🚀
+# 🎇✨ Production-Ready Finetuning of Meta Llama 3.1-8B 🎆🚀 🎯
 
 Welcome to the **Production-Ready Finetuning of Meta Llama 3.1-8B** repository! 🌟 This repository is your ultimate destination for adapting Meta's groundbreaking Llama 3.1-8B model to production-level performance across a wide range of applications. Whether you're building next-gen AI solutions or experimenting with state-of-the-art NLP techniques, this repo empowers you with the tools and workflows to succeed. 🌍💻
 
