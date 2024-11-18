@@ -1,5 +1,5 @@
 # 🎇✨ Production-Ready Finetuning of Meta Llama 3.1-8B Project 🎆🚀 🎯
-Caution: I will start working on this project soon
+Caution: I will start working on this project soon.
 
 Welcome to the **Production-Ready Finetuning of Meta Llama 3.1-8B** repository! 🌟 This repository provides state-of-the-art techniques for fine-tuning Meta's Llama 3.1-8B model with advanced optimization strategies like **QLoRA**, **LoRA**, **4-bit precision**, and **unsupervised methods**. Whether you're deploying on a large scale or experimenting with NLP innovations, this repo empowers you to fine-tune Llama 3.1-8B to perfection for production-level applications. 🌍💻
 
