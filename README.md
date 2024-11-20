@@ -151,6 +151,52 @@ Once the fine-tuned model successfully handles domain-specific queries, RAG inte
   💥 **Scalability Testing**: Conduct stress tests to ensure consistent performance under high usage scenarios.
 
 ---
+### 💥 Tools and Technologies (I will use in this project)
+
+<table>
+  <tr>
+    <th>Programming & Frameworks</th>
+    <th>Model Development & Optimization</th>
+    <th>Training & Experimentation</th>
+  </tr>
+  <tr>
+    <td><span style="color:blue;">Python Programming</span>, <span style="color:green;">Flask</span></td>
+    <td>
+      <span style="color:purple;">PyTorch</span>, 
+      <span style="color:red;">HuggingFace Transformers</span>, 
+      <span style="color:orange;">bitsandbytes</span>, 
+      <span style="color:teal;">PEFT</span>, 
+      <span style="color:magenta;">QLoRA</span>, 
+      <span style="color:gray;">LoRA</span>
+    </td>
+    <td>
+      <span style="color:darkblue;">Google Colab</span>, 
+      <span style="color:chocolate;">WandB</span>, 
+      <span style="color:darkgreen;">TensorBoard</span>, 
+      <span style="color:gold;">Accelerate</span>, 
+      <span style="color:coral;">trl</span>
+    </td>
+  </tr>
+  <tr>
+    <th>Data Management & Storage</th>
+    <th>Workflow & Orchestration</th>
+    <th>Cloud & Advanced Integrations</th>
+  </tr>
+  <tr>
+    <td>
+      <span style="color:purple;">Vector DBs</span> (e.g., <span style="color:blue;">Pinecone</span>, <span style="color:green;">Weaviate</span>)
+    </td>
+    <td>
+      <span style="color:blue;">Docker</span>, 
+      <span style="color:orange;">GitHub Actions</span>
+    </td>
+    <td>
+      <span style="color:green;">AWS Cloud</span>, 
+      <span style="color:purple;">LangChain</span>, 
+      <span style="color:blue;">HuggingFace Hub</span>
+    </td>
+  </tr>
+</table>
 
 ### 💥 Tools and Technologies (I will use in this project)
 
