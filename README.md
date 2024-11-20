@@ -34,7 +34,7 @@ The fine-tuning process will be modular, scalable, and efficient to ensure both 
 ## Challenges Encountered
 The project faced several challenges, including **limited GPU resources**, which made it difficult to fine-tune a large model. To address **4-bit quantization**, necessary for low-resource deployment, **accuracy loss** was a concern and needed mitigation. Additionally, while **MLOps tools** were planned for future integration to ensure scalability, they were not available during this phase, so the project had to be designed to accommodate them later. Finally, the **expert evaluation** provided by prompt engineering interns revealed limitations in prompting and **RAG workflows**, leading to the decision to fine-tune the model.
 
-## How I overcame Challenges
+## How I Fixed Challenges
 To overcome **GPU limitations**, the solution involved using **Google Colab Pro** and **4-bit precision** for efficient fine-tuning. To address **accuracy loss** from quantization, **advanced prompting** and **supervised fine-tuning** with **domain-specific datasets** were applied. For future **MLOps integration**, a **modular architecture** was designed for scalability, with **GitHub** for version control and **dockerization** for AWS deployment. The final fine-tuning approach was shaped by **intern feedback**, which identified gaps in **prompting** and **RAG workflows**, making fine-tuning necessary.
 
 
