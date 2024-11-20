@@ -165,6 +165,11 @@ Once the fine-tuned model successfully handles domain-specific queries, RAG inte
 * QLORA
 * LORA
 * langchain
+* Docker
+* GitHub Actions
+* AWS Cloud
+* Flask
+* Vector DB's
 
   
 ---
