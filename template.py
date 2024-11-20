@@ -41,7 +41,7 @@ list_of_files = [
     "templates/.gitkeep",  
     ".dockerignore",
     "demo.py",
-    "flowchart/.gitkeep", 
+    "flowcharts/.gitkeep", 
     "app.py",
     "Dockerfile",
     "requirements.txt",
