@@ -153,61 +153,14 @@ Once the fine-tuned model successfully handles domain-specific queries, RAG inte
 ---
 ### 💥 Tools and Technologies (I will use in this project)
 
-<table>
-  <tr>
-    <th>Programming & Frameworks</th>
-    <th>Model Development & Optimization</th>
-    <th>Training & Experimentation</th>
-  </tr>
-  <tr>
-    <td><span style="color:blue;">Python Programming</span>, <span style="color:green;">Flask</span></td>
-    <td>
-      <span style="color:purple;">PyTorch</span>, 
-      <span style="color:red;">HuggingFace Transformers</span>, 
-      <span style="color:orange;">bitsandbytes</span>, 
-      <span style="color:teal;">PEFT</span>, 
-      <span style="color:magenta;">QLoRA</span>, 
-      <span style="color:gray;">LoRA</span>
-    </td>
-    <td>
-      <span style="color:darkblue;">Google Colab</span>, 
-      <span style="color:chocolate;">WandB</span>, 
-      <span style="color:darkgreen;">TensorBoard</span>, 
-      <span style="color:gold;">Accelerate</span>, 
-      <span style="color:coral;">trl</span>
-    </td>
-  </tr>
-  <tr>
-    <th>Data Management & Storage</th>
-    <th>Workflow & Orchestration</th>
-    <th>Cloud & Advanced Integrations</th>
-  </tr>
-  <tr>
-    <td>
-      <span style="color:purple;">Vector DBs</span> (e.g., <span style="color:blue;">Pinecone</span>, <span style="color:green;">Weaviate</span>)
-    </td>
-    <td>
-      <span style="color:blue;">Docker</span>, 
-      <span style="color:orange;">GitHub Actions</span>
-    </td>
-    <td>
-      <span style="color:green;">AWS Cloud</span>, 
-      <span style="color:purple;">LangChain</span>, 
-      <span style="color:blue;">HuggingFace Hub</span>
-    </td>
-  </tr>
-</table>
-
-### 💥 Tools and Technologies (I will use in this project)
-
 | **Programming & Frameworks** | **Model Development & Optimization** | **Training & Experimentation**      |
 |-------------------------------|---------------------------------------|-------------------------------------|
-| Python Programming, Flask     | PyTorch, HuggingFace Transformers    | Google Colab, WandB, TensorBoard    |
-|                               | bitsandbytes, PEFT, QLoRA, LoRA      | Accelerate, trl                     |
+| ![Python](https://img.shields.io/badge/-Python-blue) ![Flask](https://img.shields.io/badge/-Flask-green) | ![PyTorch](https://img.shields.io/badge/-PyTorch-red) ![HuggingFace](https://img.shields.io/badge/-HuggingFace-orange) ![bitsandbytes](https://img.shields.io/badge/-bitsandbytes-teal) | ![Google Colab](https://img.shields.io/badge/-Google%20Colab-yellow) ![WandB](https://img.shields.io/badge/-WandB-brown) |
+|                               | ![PEFT](https://img.shields.io/badge/-PEFT-blue) ![QLoRA](https://img.shields.io/badge/-QLoRA-magenta) ![LoRA](https://img.shields.io/badge/-LoRA-gray) | ![TensorBoard](https://img.shields.io/badge/-TensorBoard-green) ![Accelerate](https://img.shields.io/badge/-Accelerate-gold) ![trl](https://img.shields.io/badge/-trl-coral) |
 
-| **Data Management & Storage**          | **Workflow & Orchestration**      | **Cloud & Advanced Integrations**       |
-|----------------------------------------|-----------------------------------|-----------------------------------------|
-| Vector DBs (e.g., Pinecone, Weaviate)  | Docker, GitHub Actions           | AWS Cloud, LangChain, HuggingFace Hub   |
+| **Data Management & Storage** | **Workflow & Orchestration**        | **Cloud & Advanced Integrations**      |
+|-------------------------------|--------------------------------------|----------------------------------------|
+| ![Vector DBs](https://img.shields.io/badge/-Vector%20DBs-purple) | ![Docker](https://img.shields.io/badge/-Docker-blue) ![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-orange) | ![AWS Cloud](https://img.shields.io/badge/-AWS%20Cloud-green) ![LangChain](https://img.shields.io/badge/-LangChain-purple) ![HuggingFace Hub](https://img.shields.io/badge/-HuggingFace%20Hub-blue) |
 
 
   
