@@ -35,13 +35,13 @@ The fine-tuning process will be comprehensive, modular, and production-grade, en
 ### **Core Actions**
 
 **Supervised Fine-Tuning**  
-Train the model using carefully curated domain-specific datasets to:  
+I will train the model using carefully curated domain-specific datasets to:  
 ✅ Reduce hallucinations.  
 ✅ Improve response accuracy.  
 ✅ Enhance reasoning and retrieval capabilities (integrating with vector databases).
 
 **Project Modularization**  
-Establish a robust modular structure, ensuring clear separation of components for:  
+I will be establish a robust modular structure, ensuring clear separation of components for:  
 🔹 Data preprocessing.  
 🔹 Model fine-tuning.  
 🔹 Validation and testing.  
@@ -54,13 +54,13 @@ Quantization for low-resource environments, ensuring deployment feasibility with
 **Scalability via CI/CD**  
 Implement CI/CD pipelines for continuous testing, ensuring future MLOps integration and seamless scaling as feedback loops evolve.
 
-**Advanced Prompt Engineering and RAG Integration**  
-Guide the fine-tuned model with enhanced prompting techniques and improve its adaptability using Retrieval-Augmented Generation (RAG) workflows.
+**Advanced Prompt Engineering and RAG Integration (must have)**  
+I will guide the fine-tuned model with enhanced prompting techniques and improve its adaptability using Retrieval-Augmented Generation (RAG) workflows.
 
 **Customer Feedback Integration**  
 Post-deployment, collect customer feedback to iterate on the model’s performance before launching it as a full-scale product.
 
-🍂 **Challenges Encountered**
+🍂 ## **Challenges Encountered**
 
 1️⃣ **Limited GPU Resources**  
 The available infrastructure provides limited GPU capacity, which poses a challenge for fine-tuning such a large model.
@@ -113,17 +113,7 @@ I will also develop AI agents tailored to execute multi-step workflows that meet
 5️⃣ **Ensure Production-Readiness**  
 Once the fine-tuned model successfully handles domain-specific queries, RAG integration, and other use cases, it will be ready for production deployment.
 
-🌼 **Why Fine-Tuning is Critical**  
-The decision to fine-tune the model was made after exploring other potential solutions, such as:  
-- Iterative prompting optimizations.  
-- Integrating external knowledge bases through RAG.  
 
-Despite these efforts, the model’s limitations persisted. Fine-tuning emerged as the most reliable and practical solution because:  
-- It allows the model to deeply align with our domain-specific requirements.  
-- It resolves the gaps in prompting workflows and RAG capabilities.  
-- It solves the problem of scalable improvements, such as building intelligent agents and refining RAG systems further.  
-
-By building the solution with modular, reusable components and a production-grade project structure, we ensure it meets both current needs and future scalability requirements.
 
 🌳 **Testing and Validation Plan**  
 - **Hallucination and Accuracy Testing**: Evaluate the model’s ability to generate factually correct and relevant responses.  
