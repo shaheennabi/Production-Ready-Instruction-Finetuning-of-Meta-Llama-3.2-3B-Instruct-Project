@@ -37,9 +37,9 @@ The fine-tuning process will be comprehensive, modular, and production-grade, en
 **Supervised Fine-Tuning**  
 
 I will train the model using carefully curated domain-specific datasets to:  
-✅ Reduce hallucinations.  
-✅ Improve response accuracy.  
-✅ Enhance reasoning and retrieval capabilities (integrating with vector databases).
+* Reduce hallucinations.
+* Improve response accuracy.  
+* Enhance reasoning and retrieval capabilities (integrating with vector databases).
 
  💥 **Project Modularization**  
 
