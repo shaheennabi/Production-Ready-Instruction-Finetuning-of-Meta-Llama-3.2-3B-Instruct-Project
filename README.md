@@ -19,13 +19,9 @@ As a developer, I have been entrusted with the task of delivering this fine-tune
 
 
 ---
-## **Goals**
+##  Goals
+The goals for this project focus on **achieving domain-specific excellence** by fine-tuning the model with proprietary datasets to ensure reliability. A **systematic validation** process will minimize hallucinations, improve accuracy, and ensure the model performs complex reasoning while meeting real-world customer needs. The model’s adaptability will be enhanced through **advanced prompting** and **Retrieval-Augmented Generation (RAG)**. **Intelligent agents** will be developed using LangGraph to execute multi-step workflows tailored to customer requirements. Finally, the goal is to ensure the model is **production-ready** once it meets all task-specific, RAG, and other use case requirements.
 
-- **Achieve Domain-Specific Excellence:** Fine-tune the model using proprietary datasets to ensure reliability in handling domain-specific tasks.  
-- **Systematic Validation:** Conduct testing to ensure the model minimizes hallucinations, generates accurate responses, performs complex reasoning, and satisfies real-world customer queries.  
-- **Advancement with Prompting and RAG:** Enhance model adaptability to complex queries through advanced prompting and Retrieval-Augmented Generation (RAG).  
-- **Build Intelligent Agents:** Develop AI agents using LangGraph to execute multi-step workflows tailored to specific customer needs.  
-- **Ensure Production-Readiness:** Prepare the model for production deployment once it successfully handles domain-specific tasks, RAG integration, and other use cases.
 
 
 ---
