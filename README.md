@@ -154,42 +154,14 @@ Once the fine-tuned model successfully handles domain-specific queries, RAG inte
 
 ### 💥 Tools and Technologies (I will use in this project)
 
-#### 🖥️ Programming and Frameworks
-| Tools              |
-|---------------------|
-| Python Programming, Flask |
+| **Programming & Frameworks** | **Model Development & Optimization** | **Training & Experimentation**      |
+|-------------------------------|---------------------------------------|-------------------------------------|
+| Python Programming, Flask     | PyTorch, HuggingFace Transformers    | Google Colab, WandB, TensorBoard    |
+|                               | bitsandbytes, PEFT, QLoRA, LoRA      | Accelerate, trl                     |
 
-#### 🛠️ Model Development and Optimization
-| Tools                                                |
-|------------------------------------------------------|
-| PyTorch, HuggingFace Transformers, bitsandbytes      |
-| PEFT, QLoRA, LoRA, Unsloth                           |
-
-#### 🚀 Training and Experimentation
-| Tools                               |
-|-------------------------------------|
-| Google Colab, WandB, TensorBoard    |
-| Accelerate, trl                     |
-
-#### 🗂️ Data Management and Storage
-| Tools                               |
-|-------------------------------------|
-| Vector Databases (e.g., Pinecone, Weaviate) |
-
-#### 🔗 Workflow and Orchestration
-| Tools              |
-|---------------------|
-| Docker, GitHub Actions |
-
-#### ☁️ Cloud and Hosting
-| Tools              |
-|---------------------|
-| AWS Cloud          |
-
-#### 🔍 Advanced Integration and Applications
-| Tools                     |
-|---------------------------|
-| LangChain, HuggingFace Hub |
+| **Data Management & Storage**          | **Workflow & Orchestration**      | **Cloud & Advanced Integrations**       |
+|----------------------------------------|-----------------------------------|-----------------------------------------|
+| Vector DBs (e.g., Pinecone, Weaviate)  | Docker, GitHub Actions           | AWS Cloud, LangChain, HuggingFace Hub   |
 
 
   
