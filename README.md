@@ -35,12 +35,13 @@ The fine-tuning process will be comprehensive, modular, and production-grade, en
 ### **Core Actions**
 
 **Supervised Fine-Tuning**  
+
 I will train the model using carefully curated domain-specific datasets to:  
 ✅ Reduce hallucinations.  
 ✅ Improve response accuracy.  
 ✅ Enhance reasoning and retrieval capabilities (integrating with vector databases).
 
-**Project Modularization**  
+- **Project Modularization**  
 
 I will be establish a robust modular structure, ensuring clear separation of components for:  
 🔹 Data preprocessing.  
@@ -61,7 +62,7 @@ Implement CI/CD pipelines for continuous testing, ensuring future MLOps integrat
 
 I will guide the fine-tuned model with enhanced prompting techniques and improve its adaptability using Retrieval-Augmented Generation (RAG) workflows.
 
-**Customer Feedback Integration**  
+- **Customer Feedback Integration**  
 
 Post-deployment, collect customer feedback to iterate on the model’s performance before launching it as a full-scale product.
 
