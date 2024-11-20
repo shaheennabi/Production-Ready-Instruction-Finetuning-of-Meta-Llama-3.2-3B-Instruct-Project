@@ -60,7 +60,9 @@ I will guide the fine-tuned model with enhanced prompting techniques and improve
 **Customer Feedback Integration**  
 Post-deployment, collect customer feedback to iterate on the model’s performance before launching it as a full-scale product.
 
-🍂 ## **Challenges Encountered**
+--- 
+
+##  🍂 **Challenges Encountered**
 
 1️⃣ **Limited GPU Resources**  
 The available infrastructure provides limited GPU capacity, which poses a challenge for fine-tuning such a large model.
@@ -74,7 +76,7 @@ While future plans include MLOps tools integration for scalability, they are not
 4️⃣ **Need for Expert Evaluation**  
 The decision to fine-tune the model came after prompt engineering interns, hired by the manager, extensively tested it. Their feedback highlighted limitations in prompting techniques and Retrieval-Augmented Generation (RAG) workflows, necessitating a deeper intervention like fine-tuning.
 
-🌟 **Solutions and Strategies**
+## 🌟 **Solutions and Strategies**
 
 1️⃣ **Overcoming Limited GPU Resources**  
 To address the GPU constraint, I will use Google Colab Pro for fine-tuning the model. Additionally, I will load the LLaMA 3.1 model in 4-bit precision, which significantly reduces GPU memory usage while enabling efficient model fine-tuning.
@@ -93,7 +95,9 @@ To future-proof the project for MLOps tool integration, I will:
 4️⃣ **Fine-Tuning Decision Based on Expert Feedback**  
 The fine-tuning approach was finalized after prompt engineering interns evaluated the model’s performance with advanced prompting and RAG workflows. Their analysis revealed persistent gaps that could not be resolved through prompting alone, making fine-tuning the most reliable solution.
 
-🌱 **Goals and Key Objectives**
+---
+
+## 🌱 **Goals and Key Objectives**
 
 1️⃣ **Achieve Domain-Specific Excellence Through Fine-Tuning (Must-Have)**  
 I will fine-tune the model on proprietary datasets, ensuring it can handle domain-specific tasks with high reliability.
@@ -113,16 +117,18 @@ I will also develop AI agents tailored to execute multi-step workflows that meet
 5️⃣ **Ensure Production-Readiness**  
 Once the fine-tuned model successfully handles domain-specific queries, RAG integration, and other use cases, it will be ready for production deployment.
 
+---
 
-
-🌳 **Testing and Validation Plan**  
+## 🌳 **Testing and Validation Plan**  
 - **Hallucination and Accuracy Testing**: Evaluate the model’s ability to generate factually correct and relevant responses.  
 - **Reasoning and Retrieval**: Test multi-step reasoning capabilities and verify accurate retrieval from vector databases.  
 - **Prompting and RAG Testing**: Assess performance with advanced prompting techniques and RAG workflows.  
 - **Customer Interaction Simulation**: Test real-world customer scenarios to evaluate reliability and satisfaction.  
 - **Scalability Testing**: Conduct stress tests to ensure consistent performance under high usage scenarios.
 
-🌱 **Impact on Company Objectives**
+---
+
+## 🌱 **Impact on Company Objectives**
 
 1️⃣ **Accelerated AI Integration**  
 This project positions the company as a leader in leveraging large language models (LLMs) for solving real-world problems, enabling faster adoption of AI-driven solutions.
@@ -139,7 +145,9 @@ The modular design ensures that this project can serve as a foundation for futur
 5️⃣ **Strengthened AI Ecosystem**  
 Fine-tuning LLaMA 3.1 8B ensures the company’s AI ecosystem is robust, adaptable, and ready for integration into various applications, creating a competitive edge in the market.
 
-**License 📜✨**  
+---
+
+## **License 📜✨**  
 This project is licensed under the MIT License.  
 You are free to use, modify, and share this project, as long as proper credit is given to the original contributors.  
 For more details, check the LICENSE file. 🏛️
