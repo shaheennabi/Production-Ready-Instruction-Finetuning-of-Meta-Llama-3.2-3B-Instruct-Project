@@ -152,7 +152,28 @@ Once the fine-tuned model successfully handles domain-specific queries, RAG inte
 
 ---
 
+###  💥 Tools and Technologies(I will use in this project)
+* Python Programming
+* HuggingFace
+* Google Colab
+* WandB
+* bitsandbytes
+* PyTorch
+* tensorboard
+* Unsloth
+* PEFT
+* QLORA
+* LORA
+* langchain
 
+  
+---
+
+###  💥 Project System Design (or pipeline)
+
+
+
+---
 ## **License 📜✨**  
 
 This project is licensed under the MIT License.  
