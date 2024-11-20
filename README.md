@@ -51,7 +51,7 @@ I will be establish a robust modular structure, ensuring clear separation of com
 
    **Efficiency Enhancements**  
 
-Quantization for low-resource environments, ensuring deployment feasibility with limited GPU resources.  
+- Quantization for low-resource environments, ensuring deployment feasibility with limited GPU resources.  
 4-bit precision loading of the model in Google Colab for training efficiency.
 
   **Scalability via CI/CD**  
