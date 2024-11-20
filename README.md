@@ -1,4 +1,4 @@
-# 🎆 **Fine-Tuning LLaMA 3.1 8B: Addressing Challenges and Elevating Performance** 🎆  
+# 🎆 **Production-Ready-Finetuning-of-Meta-Llama-3.1-8B-Project** 🎆  
 
 ---
 
