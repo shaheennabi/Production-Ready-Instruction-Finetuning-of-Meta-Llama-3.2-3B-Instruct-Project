@@ -26,6 +26,31 @@ As a developer, I have been entrusted with the task of delivering this fine-tune
 
 - **Collaboration with the Team**: I will work closely with the **AI Systems Team**, including the **prompt engineers** who initially tested the model, to align the fine-tuning approach with the business goals and customer requirements. Their **feedback will be invaluable** in guiding the fine-tuning process to ensure that the resulting model effectively addresses the gaps in prompting and RAG workflows.
 
+---
+##  Goals 
+
+1️. **Achieve Domain-Specific Excellence Through Fine-Tuning (Must-Have)**  
+
+- I will fine-tune the model on proprietary datasets, ensuring it can handle domain-specific tasks with high reliability.
+
+2. **Systematic Validation Across Critical Usecases:**  
+- 
+- **Hallucination Testing**: I will verify that the model minimizes irrelevant or fabricated outputs.  
+- **Accuracy Testing**: Ensure the model generates reliable, factually correct responses.  
+- **Reasoning Validation**: I will evaluate the model’s ability to process complex, multi-step reasoning tasks and retrieve knowledge accurately from vector databases.  
+- **Customer Satisfaction Testing**: I will simulate different customer behavior-based questions to measure real-world usability.
+
+3️. **Enable Advancement with Prompting and RAG**  
+
+- The fine-tuned model will be tested for adaptability to solve more complex queries using enhanced prompting techniques and RAG.
+
+4️. **Build Intelligent Agents**  
+
+- I will also develop AI agents tailored to execute multi-step workflows that meet specific customer needs by using LangGraph.
+
+5️. **Ensure Production-Readiness**  
+
+- Once the fine-tuned model successfully handles domain-specific queries, RAG integration, and other use cases, it will be ready for production deployment.
 
 
 ---
@@ -76,33 +101,6 @@ The fine-tuning process will be modular, scalable, and efficient to ensure both 
 4️. **Fine-Tuning Decision Based on Expert Feedback**  
 
 - The fine-tuning approach was finalized after prompt engineering interns evaluated the model’s performance with advanced prompting and RAG workflows. Their analysis revealed persistent gaps that could not be resolved through prompting alone, making fine-tuning the most reliable solution.
-
----
-
-##  Goals 
-
-1️. **Achieve Domain-Specific Excellence Through Fine-Tuning (Must-Have)**  
-
-- I will fine-tune the model on proprietary datasets, ensuring it can handle domain-specific tasks with high reliability.
-
-2️. **Systematic Validation Across Critical Usecases:**  
-- 
-- **Hallucination Testing**: I will verify that the model minimizes irrelevant or fabricated outputs.  
-- **Accuracy Testing**: Ensure the model generates reliable, factually correct responses.  
-- **Reasoning Validation**: I will evaluate the model’s ability to process complex, multi-step reasoning tasks and retrieve knowledge accurately from vector databases.  
-- **Customer Satisfaction Testing**: I will simulate different customer behavior-based questions to measure real-world usability.
-
-3️. **Enable Advancement with Prompting and RAG**  
-
-- The fine-tuned model will be tested for adaptability to solve more complex queries using enhanced prompting techniques and RAG.
-
-4️. **Build Intelligent Agents**  
-
-- I will also develop AI agents tailored to execute multi-step workflows that meet specific customer needs by using LangGraph.
-
-5️. **Ensure Production-Readiness**  
-
-- Once the fine-tuned model successfully handles domain-specific queries, RAG integration, and other use cases, it will be ready for production deployment.
 
 
 ---
