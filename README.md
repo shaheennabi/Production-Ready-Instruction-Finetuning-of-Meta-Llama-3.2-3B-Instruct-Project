@@ -155,13 +155,12 @@ Once the fine-tuned model successfully handles domain-specific queries, RAG inte
 
 | **Programming & Frameworks** | **Model Development & Optimization** | **Training & Experimentation**      |
 |-------------------------------|---------------------------------------|-------------------------------------|
-| ![Python](https://img.shields.io/badge/-Python-blue) ![Flask](https://img.shields.io/badge/-Flask-green) | ![PyTorch](https://img.shields.io/badge/-PyTorch-red) ![HuggingFace](https://img.shields.io/badge/-HuggingFace-orange) ![bitsandbytes](https://img.shields.io/badge/-bitsandbytes-teal) | ![Google Colab](https://img.shields.io/badge/-Google%20Colab-yellow) ![WandB](https://img.shields.io/badge/-WandB-brown) |
-|                               | ![PEFT](https://img.shields.io/badge/-PEFT-blue) ![QLoRA](https://img.shields.io/badge/-QLoRA-magenta) ![LoRA](https://img.shields.io/badge/-LoRA-gray) | ![TensorBoard](https://img.shields.io/badge/-TensorBoard-green) ![Accelerate](https://img.shields.io/badge/-Accelerate-gold) ![trl](https://img.shields.io/badge/-trl-coral) |
+| Python Programming, Flask     | PyTorch, HuggingFace Transformers    | Google Colab, WandB, TensorBoard    |
+|                               | bitsandbytes, PEFT, QLoRA, LoRA      | Accelerate, trl                     |
 
-| **Data Management & Storage** | **Workflow & Orchestration**        | **Cloud & Advanced Integrations**      |
-|-------------------------------|--------------------------------------|----------------------------------------|
-| ![Vector DBs](https://img.shields.io/badge/-Vector%20DBs-purple) | ![Docker](https://img.shields.io/badge/-Docker-blue) ![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-orange) | ![AWS Cloud](https://img.shields.io/badge/-AWS%20Cloud-green) ![LangChain](https://img.shields.io/badge/-LangChain-purple) ![HuggingFace Hub](https://img.shields.io/badge/-HuggingFace%20Hub-blue) |
-
+| **Data Management & Storage**          | **Workflow & Orchestration**      | **Cloud & Advanced Integrations**       |
+|----------------------------------------|-----------------------------------|-----------------------------------------|
+| Vector DBs (e.g., Pinecone, Weaviate)  | Docker, GitHub Actions           | AWS Cloud, LangChain, HuggingFace Hub   |
 
   
 ---
