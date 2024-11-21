@@ -2,7 +2,8 @@
 
 
 
-![Uploading Reinforcement-Learning-From-Human-Feedback-For-LLMs_7.png…]()
+![Uploading Gc7dUNSaAAAQw2c.jpg…]()
+
 
 
 What is it, and why is it so confusing? Well, in this file, I will take you on a new adventure, and we will learn what **RLHF** with **PPO** actually means.
