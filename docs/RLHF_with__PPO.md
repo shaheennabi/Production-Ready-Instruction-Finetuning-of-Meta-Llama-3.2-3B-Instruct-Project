@@ -94,3 +94,5 @@ It penalizes large deviations, ensuring the LLM retains its general-purpose func
 --- 
 
 This concludes the explanation of how RLHF with PPO works, focusing on frozen LLMs, over-optimization, and the role of KL loss.
+
+I hope you understood, in simple RLHF is using optimzation like algorithms to update to guide the main llm update. As reseach advances there are many other ways too..
