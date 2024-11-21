@@ -1,6 +1,7 @@
 # Reinforcement Learning from Human Feedback with PPO
 
-![Uploading Screenshot 2024-11-21 083539.png…]()
+![Uploading image.png…]()
+
 
 
 What is it, and why is it so confusing? Well, in this file, I will take you on a new adventure, and we will learn what **RLHF** with **PPO** actually means.
