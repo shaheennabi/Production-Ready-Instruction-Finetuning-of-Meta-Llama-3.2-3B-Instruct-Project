@@ -61,4 +61,4 @@ The reward model is trained on this input-output pair. When given a prompt and r
 
 The reward model is trained like any deep neural network and provides a scalar output (**score**). Once trained, the reward model is used to fine-tune the main LLM (e.g., ChatGPT or GPT model). 
 
-**In the next file named: RLHF with PPO, I will explain how this Reward Model is used to fine-tune or guide the main LLM.**
+**In the next file named: RLHF_with_PPO, I will explain how this Reward Model is used to fine-tune or guide the main LLM.**
