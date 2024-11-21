@@ -41,27 +41,6 @@ To overcome **GPU limitations**, the solution involved using **Google Colab Pro*
 
 
 ---
-###  Tools and Technologies (I will use in this project)
-
-| 🖥️ **Programming and Frameworks**         | 🛠️ **Model Development and Optimization**      | 🚀 **Training and Experimentation**           |
-|-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-| Python Programming                        | PyTorch                                         | Google Colab                                  |
-| Flask                                     | HuggingFace Transformers                        | WandB (Weights & Biases)                      |
-|                                           | bitsandbytes                                    | TensorBoard                                   |
-|                                           | PEFT                                            | Accelerate                                    |
-|                                           | QLoRA                                           | trl                                           |
-|                                           | LoRA                                            |                                               |
-|                                           | Unsloth                                         |                                               |
-
-| 🗂️ **Data Management and Storage**        | 🔗 **Workflow and Orchestration**                | ☁️ **Cloud and Hosting**                      |
-|-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-| S3 Bucket, Vector Databases (e.g., Pinecone, Weaviate) | Docker                                          | AWS Cloud                                     |
-|                                           | GitHub Actions                                  |                                               |
-
-| 🔍 **Advanced Integration and Applications** |
-|------------------------------------------------|
-| LangChain                                      |
-| HuggingFace Hub                                |
 
 ---
 
