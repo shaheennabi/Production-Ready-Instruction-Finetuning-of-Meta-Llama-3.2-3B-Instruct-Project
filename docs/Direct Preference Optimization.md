@@ -1,5 +1,8 @@
 # **Direct Preference Optimization**
 
+![Uploading DPO.png…]()
+
+
 In this section, we explore **Direct Preference Optimization (DPO)**, a technique for fine-tuning large language models (LLMs), such as GPT, with human feedback. 
 
 Unlike **RLHF with PPO**, **DPO** does not require separate training of a reward model. Instead, it directly leverages human preferences to optimize the LLM's outputs. While some steps overlap with RLHF, the way the loss function updates the model parameters is distinct.
