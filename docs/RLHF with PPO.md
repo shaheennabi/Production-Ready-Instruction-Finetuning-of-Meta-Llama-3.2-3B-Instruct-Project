@@ -39,11 +39,12 @@ As discussed in **reward_model.md**, the reward model scores responses generated
    L^{CLIP}(\theta) = \mathbb{E}_t \left[ \min \left( r_t(\theta) \hat{A}_t, \text{clip}(r_t(\theta), 1-\epsilon, 1+\epsilon) \hat{A}_t \right) \right]
    $$
 
-   Where:
+  Where:
 
-   - \( r_t(\theta) = \frac{\pi_\theta(a_t|s_t)}{\pi_{\theta_\text{old}}(a_t|s_t)} \)
-   - \( \hat{A}_t \) is the advantage function.
-   - \( \epsilon \) is a hyperparameter that controls the degree of clipping to prevent large policy updates.
+- $r_t(\theta) = \frac{\pi_\theta(a_t|s_t)}{\pi_{\theta_\text{old}}(a_t|s_t)}$
+- $\hat{A}_t$ is the advantage function.
+- $\epsilon$ is a hyperparameter that controls the degree of clipping to prevent large policy updates.
+
 
 4. **Updated Response (After RLHF)**:  
    - **Prompt**: I like cricket  
