@@ -35,11 +35,12 @@ As discussed in **reward_model.md**, the reward model scores responses generated
 
    The policy update in PPO is given by the formula:
 
-   $$ 
-   L^{CLIP}(\theta) = \mathbb{E}_t \left[ \min \left( r_t(\theta) \hat{A}_t, \text{clip}(r_t(\theta), 1-\epsilon, 1+\epsilon) \hat{A}_t \right) \right] 
+   $$
+   L^{CLIP}(\theta) = \mathbb{E}_t \left[ \min \left( r_t(\theta) \hat{A}_t, \text{clip}(r_t(\theta), 1-\epsilon, 1+\epsilon) \hat{A}_t \right) \right]
    $$
 
    Where:
+
    - \( r_t(\theta) = \frac{\pi_\theta(a_t|s_t)}{\pi_{\theta_\text{old}}(a_t|s_t)} \)
    - \( \hat{A}_t \) is the advantage function.
    - \( \epsilon \) is a hyperparameter that controls the degree of clipping to prevent large policy updates.
@@ -109,8 +110,8 @@ D_{KL}(P || Q) = \sum P(x) \log \frac{P(x)}{Q(x)}
 $$
 
 Where:
-- \(P(x)\): Probability distribution of the updated model.
-- \(Q(x)\): Probability distribution of the frozen model.
+- \( P(x) \): Probability distribution of the updated model.
+- \( Q(x) \): Probability distribution of the frozen model.
 
 - **Purpose**:  
   - Penalizes large deviations from the frozen LLM.  
