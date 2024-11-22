@@ -1,7 +1,7 @@
 # **Direct Preference Optimization**
 
 In this section, we explore **Direct Preference Optimization (DPO)**, a technique for fine-tuning large language models (LLMs), such as GPT, with human feedback.
-![Uploading image.png…]()
+![Direct Preference Optimization Image](C:\Users\mailm\Downloads\projects\DPO.png)
 
 
 
