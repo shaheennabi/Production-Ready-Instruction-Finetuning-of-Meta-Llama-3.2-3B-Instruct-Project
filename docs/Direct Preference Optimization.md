@@ -1,7 +1,7 @@
 # **Direct Preference Optimization**
 
-[![Uploading DPO.png…]()
-](https://superagi.com/policy-optimization-algorithms-frameworks/)
+![Uploading image.png…]()
+
 
 In this section, we explore **Direct Preference Optimization (DPO)**, a technique for fine-tuning large language models (LLMs), such as GPT, with human feedback. 
 
