@@ -50,6 +50,28 @@ As discussed in **reward_model.md**, the reward model scores responses generated
 
 ---
 
+## **Policy Network Architecture in RLHF**
+
+During the **RLHF** process, the **policy network** of the LLM undergoes fine-tuning. The **policy network** refers to the architecture that the LLM uses to generate responses to given prompts. This architecture is modified and adjusted during the fine-tuning phase to align better with the human preferences as indicated by the reward model.
+
+### **1. LLM as an Agent**
+
+In the RL framework, the LLM is treated as an **agent** that learns from the environment (human feedback) to improve its policy (the way it generates responses). The policy network is the component responsible for generating a distribution over the possible responses given the input prompt.
+
+### **2. Updates to the Policy Network**
+
+PPO updates the policy network by using the reward signal to adjust the parameters of the model. The parameters of the LLM's architecture (such as weights and biases in the neural network layers) are updated using gradients computed from the reward model's feedback.
+
+   The update rule for PPO's policy network is designed to prevent large updates that could harm the model's performance. The clipped objective function ensures that the changes to the policy are gradual and stable. This process effectively "fine-tunes" the LLM to generate more human-aligned responses.
+
+### **3. Reward Signal and Policy Improvement**
+
+The reward signal serves as a feedback mechanism that directly influences how the policy network evolves. If the LLM generates a response that is closer to human preferences, the reward signal will be higher, reinforcing the policy towards generating similar responses in the future.
+
+If the response is far from what is desired, the reward signal will be low, and the policy network will be adjusted accordingly, guiding the model to generate responses that better align with human preferences.
+
+---
+
 ## **Key Concepts in RLHF with PPO**
 
 ### **1. Reinforcement Learning Framework**
@@ -103,6 +125,7 @@ Where:
 3. **PPO Algorithm**: Updates the LLM's policy using the reward signal.  
 4. **Frozen LLM**: Prevents over-optimization and maintains general-purpose capabilities.  
 5. **KL Loss**: Ensures the updated model balances alignment with human feedback and general functionality.
+6. **Policy Network**: The LLM's architecture that generates responses is fine-tuned through PPO using the reward signal.
 
 ### **Takeaway**
 
