@@ -1,4 +1,4 @@
-# 🌿 Production-Ready Instruction Fine-Tuning of Meta LLaMA 3.1 8B Project 🌿
+# 🌿 Production-Ready ULMA Instruction Fine-Tuning of Meta LLaMA 3.1 8B Project 🌿
 updating readme: soon
 ##  **Problem Statement**  
 At XYZ Company, we adopted the **LLaMA 3.1 8B model** as the core **AI foundation for our product**. However, after conducting recent performance evaluations in a **production environment**, several critical limitations have come to light. These issues have led to **customer dissatisfaction** and have been caused the following key issues:
