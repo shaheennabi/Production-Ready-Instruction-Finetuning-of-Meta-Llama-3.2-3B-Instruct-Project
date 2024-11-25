@@ -69,7 +69,7 @@ The project will have a clear modular structure, dividing tasks into distinct co
 
 - **Data Preprocessing**
 - **Model Fine-Tuning**
-- **Validation**
+- **Evaluation**
 - **Deployment** (as a REST API via Flask on AWS)
 
 To optimize training efficiency, I will implement **quantization** and **4-bit precision** for faster training within **Google Colab**, utilizing limited GPU resources. 
