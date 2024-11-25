@@ -113,6 +113,14 @@ The project encountered several challenges, including:
 
 ## Tools (used in this project)
 
+- accelerate
+- peft
+- bitsandbytes
+- transformers
+- trl
+- datasets
+
+
 ---
 
 ###  Project System Design (or pipeline)
