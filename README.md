@@ -44,8 +44,16 @@ Close collaboration with the **AI Systems Team** and **prompt engineers** will e
 
 
 ---
-##  Goals
-The goals for this project focus on **achieving domain-specific excellence** by fine-tuning the model with proprietary datasets to ensure reliability. A **systematic validation** process will minimize hallucinations, improve accuracy, and ensure the model performs complex reasoning while meeting real-world customer needs. The model’s adaptability will be enhanced through **advanced prompting** and **Retrieval-Augmented Generation (RAG)**. **Intelligent agents** will be developed using LangGraph to execute multi-step workflows tailored to customer requirements. Finally, the goal is to ensure the model is **production-ready** once it meets all task-specific, RAG, and other use case requirements.
+## Goals 🎉  
+
+- **Mitigate harmful outputs** such as hate speech, sexually explicit content, and racial bias by instruct-based **ULMA fine-tuning** using **Anthropic’s Hugging Face dataset**.  
+- Deliver a **production-ready solution** that aligns the model with societal norms, ethical standards, and customer expectations.  
+- **Impress customers** and maintain trust among our **large user base** by ensuring the model generates safe, inclusive, and appropriate content.  
+- Prioritize **GPU resource optimization** by leveraging **QLoRA** techniques, enabling efficient fine-tuning with minimal computational overhead while maintaining model performance.  
+- Strengthen the model’s robustness to eliminate the recurrence of harmful content **post-fine-tuning** through **advanced prompting strategies** and thorough testing.  
+- Ensure the model’s adaptability and compliance with **performance, ethical, and production-ready standards**, balancing resource constraints with deployment readiness.  
+
+
 
 
 
