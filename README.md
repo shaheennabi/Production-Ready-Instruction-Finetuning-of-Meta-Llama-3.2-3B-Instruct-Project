@@ -114,6 +114,7 @@ The project encountered several challenges, including:
 ## Tools and Libraries(used in this project)
 
 - accelerate
+- torch
 - peft
 - bitsandbytes
 - transformers
