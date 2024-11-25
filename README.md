@@ -3,7 +3,10 @@
 ## **Problem Statement**  
 ---  
 *Note: This project simulates an industry-standard scenario where I am pretending to work at XYZ Company. The LLaMA 3.1 8B model was deployed in production on our product but was generating harmful outputs such as hate speech, sexually explicit, and racially biased content. This created an immediate need for instruct-based ULMA fine-tuning. As a developer, I approached this problem using industry-standard practices to ensure the model aligns with societal norms and ethical standards while meeting business requirements.*
- 
+
+**High-Level Note:** All detailed information about **Instruction Fine-Tuning**, **ULMA**, concepts like **reward models**, **training of large language models**, **Reinforcement Learning from Human Feedback (RLHF)**, **Direct Preference Optimization**, **Parameter-Efficient Fine-Tuning**, **Higher Floating-Point Precision Conversion to Lower Precision**, **Quantization**, **LoRA**, and **QLoRA** have already been covered in the `docs/` folder of this repository. Please refer to the documentation there for an in-depth understanding of how these concepts work. In this readme, I will go with project pipeline etc or the main details relevant to the project.
+
+
 ---  
 
 At **XYZ Company**, we adopted the **LLaMA 3.1 8B model** as the core **AI foundation for our product**. However, recent **performance evaluations in production environments** exposed critical limitations. These issues led to **customer dissatisfaction** and highlighted the following challenges:  
