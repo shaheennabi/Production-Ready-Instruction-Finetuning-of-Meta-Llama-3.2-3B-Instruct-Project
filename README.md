@@ -111,7 +111,7 @@ The project encountered several challenges, including:
 
 ---
 
-## Tools (used in this project)
+## Tools and Libraries(used in this project)
 
 - accelerate
 - peft
@@ -119,6 +119,9 @@ The project encountered several challenges, including:
 - transformers
 - trl
 - datasets
+- google-colab
+- flask
+- aws
 
 
 ---
