@@ -80,6 +80,10 @@ Additionally, I will apply **advanced prompt engineering techniques** to further
 Once deployed, I will gather **customer feedback** to continuously iterate and improve the model before a full-scale product launch, ensuring its readiness and relevance for real-world applications.
 
 
+![CI_CD Diagram](https://github.com/user-attachments/assets/728ba247-ffda-4899-bf5a-f365af558c40)
+
+
+
 
 --- 
 ## Challenges Encountered
