@@ -1,16 +1,17 @@
-# 🌿 Production-Ready ULMA Instruction Fine-Tuning of Meta LLaMA 3.1 8B Project 🌿
-updating readme: soon
-##  **Problem Statement**  
----
-* Note: I am pretending about this project, that I am working in a company and solving industry standard problem.
----
-At XYZ Company, we adopted the **LLaMA 3.1 8B model** as the core **AI foundation for our product**. However, after conducting recent performance evaluations in a **production environment**, several critical limitations have come to light. These issues have led to **customer dissatisfaction** and have been caused the following key issues:
+# 🎋🌿 **Production-Ready ULMA Instruction Fine-Tuning of Meta LLaMA 3.1 8B Project** 🌿🎉  
 
+## **Problem Statement**  
+---  
+*Note: This project simulates an industry-standard problem, envisioning work at XYZ Company.*  
+---  
 
-**Identified Issues**  
-- Persistent Hallucinations: The model generates irrelevant or factually incorrect responses.  
-- Inconsistent Domain-Specific Accuracy: Struggles to handle context-specific queries.  
-- Limited Reasoning Capabilities: Challenges in retrieving and leveraging structured external knowledge, such as data from vector databases.
+At **XYZ Company**, we adopted the **LLaMA 3.1 8B model** as the core **AI foundation for our product**. However, recent **performance evaluations in production environments** have exposed critical limitations. These issues have resulted in **customer dissatisfaction** and highlighted the following challenges:  
+
+### **Identified Issues**  
+- The model was generating **racist text** and **sexual content** in certain contexts.  
+- It produced **hate speech** targeting specific entities, contributing to potential reputational damage.  
+- A significant amount of the generated content was **hateful**, exhibited **social norm biases**, and posed **safety risks** for customers.  
+
 
 To address these issues and align the model with specific business requirements, the **AI Systems Team—guided by our manager’s** directives—hired **prompt engineers** to extensively test the model's responses. Their tests produced promising results, and significant improvements were observed in the model's performance through **advanced prompting** techniques and integration of **Retrieval-Augmented Generation (RAG) workflows**. However, despite these optimizations, **critical gaps remained**. The model continued to struggle with consistently handling **domain-specific content**, **complex multi-step queries**, and effectively retrieving and utilizing **external knowledge sources**. 
 
