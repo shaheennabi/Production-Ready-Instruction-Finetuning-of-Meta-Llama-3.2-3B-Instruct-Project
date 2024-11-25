@@ -82,9 +82,9 @@ Once deployed, I will gather **customer feedback** to continuously iterate and i
 
 **Note: This is high-level view.**
 
-![CI_CD Diagram (1)](https://github.com/user-attachments/assets/55124a73-0cd6-4f0c-a6ba-a8b698c072db)
 
 
+![CI_CD Diagram (2)](https://github.com/user-attachments/assets/ea73009a-26ba-477c-97b9-88672935eb57)
 
 
 
