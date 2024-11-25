@@ -92,7 +92,7 @@ The project encountered several challenges, including:
 
 - **Limited GPU Resources**: Fine-tuning a large model was difficult due to the scarcity of available GPU resources.
 - **Human Preferences and Safe Responses**: Ensuring the model generated **accurate responses** without harmful or biased content was a key concern, requiring proper mitigation strategies.
-**Timeline Constraints**: The project timeline posed significant challenges, due to the large user base of the model, requiring quick action and immediate attention.
+- **Timeline Constraints**: The project timeline posed significant challenges, due to the large user base of the model, requiring quick action and immediate attention.
 - **Model Inference on AWS**: Running inference on AWS was costly. This raised concerns regarding both **storage** and **compute costs**.
 
 
