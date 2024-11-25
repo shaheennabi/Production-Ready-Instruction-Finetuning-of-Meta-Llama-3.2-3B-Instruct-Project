@@ -2,7 +2,8 @@
 
 ## **Problem Statement**  
 ---  
-*Note: This project simulates an industry-standard problem, envisioning work at XYZ Company. The LLaMA 3.1 8B model was assumed to be in production but required fine-tuning to address ULMA-related issues. As a developer, the problem is approached with industry-standard practices.*  
+*Note: This project simulates an industry-standard scenario where I am pretending to work at XYZ Company. The LLaMA 3.1 8B model was deployed in production on our product but was generating harmful outputs such as hate speech, sexually explicit, and racially biased content. This created an immediate need for instruct-based ULMA fine-tuning. As a developer, I approached this problem using industry-standard practices to ensure the model aligns with societal norms and ethical standards while meeting business requirements.*
+ 
 ---  
 
 At **XYZ Company**, we adopted the **LLaMA 3.1 8B model** as the core **AI foundation for our product**. However, recent **performance evaluations in production environments** exposed critical limitations. These issues led to **customer dissatisfaction** and highlighted the following challenges:  
@@ -23,7 +24,7 @@ To address these issues and ensure alignment with societal norms, ethical standa
 
 Fine-tuning is considered the **only viable method** to deeply align the model with societal and ethical expectations, ensuring it performs reliably and responsibly in production environments.  
 
-### **My Role as a Developer**  
+### **My Role as a Developer**  🎋
 As a developer, I am responsible for delivering a fine-tuned **LLaMA 3.1 8B** model that meets the defined Key Performance Indicator (KPI) objectives while aligning with societal and ethical standards.  
 
 - I will **instruct fine-tune** the model using high-quality **ULMA datasets** from **Anthropic's Hugging Face Dataset** (**Unified-Language-Model-Alignment/Anthropic_HH_Golden**). This process will improve the model’s responses, ensuring it does not generate hateful, sexual, or racist text and aligns with societal norms.  
