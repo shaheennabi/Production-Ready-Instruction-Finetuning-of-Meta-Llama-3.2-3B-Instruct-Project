@@ -2,20 +2,26 @@
 
 ## **Problem Statement**  
 ---  
-*Note: This project simulates an industry-standard problem, envisioning work at XYZ Company.*  
+*Note: This project simulates an industry-standard problem, envisioning work at XYZ Company. The LLaMA 3.1 8B model was assumed to be in production but required fine-tuning to address ULMA-related issues. As a developer, the problem is approached with industry-standard practices.*  
 ---  
 
-At **XYZ Company**, we adopted the **LLaMA 3.1 8B model** as the core **AI foundation for our product**. However, recent **performance evaluations in production environments** have exposed critical limitations. These issues have resulted in **customer dissatisfaction** and highlighted the following challenges:  
+At **XYZ Company**, we adopted the **LLaMA 3.1 8B model** as the core **AI foundation for our product**. However, recent **performance evaluations in production environments** exposed critical limitations. These issues led to **customer dissatisfaction** and highlighted the following challenges:  
 
 ### **Identified Issues**  
-- The model was generating **racist text** and **sexual content** in certain contexts.  
-- It produced **hate speech** targeting specific entities, contributing to potential reputational damage.  
-- A significant amount of the generated content was **hateful**, exhibited **social norm biases**, and posed **safety risks** for customers.  
+- The model generated **racist text** and **sexual content** in certain scenarios.  
+- It produced **hate speech** targeting specific entities, causing potential reputational damage.  
+- A significant portion of the generated content was **hateful**, displayed **social norm biases**, and posed **safety risks** to customers.  
 
+### **Need for Immediate Action**  
+These challenges raised significant ethical and safety concerns due to the product's large user base. The **AI Systems Team**, under the guidance of management, hired **prompt engineers** to extensively test the model's responses. Despite their efforts, the results remained harmful to customers and society, necessitating a more robust solution.  
 
-To address these issues and align the model with specific business requirements, the **AI Systems Team—guided by our manager’s** directives—hired **prompt engineers** to extensively test the model's responses. Their tests produced promising results, and significant improvements were observed in the model's performance through **advanced prompting** techniques and integration of **Retrieval-Augmented Generation (RAG) workflows**. However, despite these optimizations, **critical gaps remained**. The model continued to struggle with consistently handling **domain-specific content**, **complex multi-step queries**, and effectively retrieving and utilizing **external knowledge sources**. 
+### **Proposed Solution: ULMA Instruction Fine-Tuning**  
+To address these issues and ensure alignment with societal norms, ethical standards, and human preferences, the team decided to proceed with **instruction-based ULMA fine-tuning**. This solution aims to:  
+- Prevent hate speech and harmful content.  
+- Reduce biases in model outputs.  
+- Ensure safety and ethical compliance in real-world applications.  
 
-In light of these persistent challenges, the decision was made to proceed with **fine-tuning** as the optimal solution. The **prompt engineering team’s** evaluation confirmed that while prompting improvements were beneficial, they alone **would not be sufficient** to fully address the model’s limitations. Fine-tuning is the **only viable method** to deeply align the model with our domain-specific requirements and ensure its ability to perform reliably in real-world applications.
+Fine-tuning is considered the **only viable method** to deeply align the model with societal and ethical expectations, ensuring it performs reliably and responsibly in production environments.  
 
 ### **My Role as a Developer**  
 As a developer, I have been entrusted with the task of delivering this fine-tuned model, ensuring it meets both technical specifications and business objectives. 
