@@ -89,13 +89,27 @@ Once deployed, I will gather **customer feedback** to continuously iterate and i
 
 
 --- 
-## Challenges Encountered
-The project faced several challenges, including **limited GPU resources**, which made it difficult to fine-tune a large model. To address **4-bit quantization**, necessary for low-resource deployment, **accuracy loss** was a concern and needed mitigation. Additionally, while **MLOps tools** were planned for future integration to ensure scalability, they were not available during this phase, so the project had to be designed to accommodate them later. Finally, the **expert evaluation** provided by prompt engineering interns revealed limitations in prompting and **RAG workflows**, leading to the decision to fine-tune the model.
+## Challenges Encountered 🎋
 
-## How I Fixed Challenges
-To overcome **GPU limitations**, the solution involved using **Google Colab Pro** and **4-bit precision** for efficient fine-tuning. To address **accuracy loss** from quantization, **advanced prompting** and **supervised fine-tuning** with **domain-specific datasets** were applied. For future **MLOps integration**, a **modular architecture** was designed for scalability, with **GitHub** for version control and **dockerization** for AWS deployment. The final fine-tuning approach was shaped by **intern feedback**, which identified gaps in **prompting** and **RAG workflows**, making fine-tuning necessary.
+The project encountered several challenges, including:
+
+- **Limited GPU Resources**: Fine-tuning a large model was difficult due to the scarcity of available GPU resources.
+- **Human Preferences and Safe Responses**: Ensuring the model generated **accurate responses** without harmful or biased content was a key concern, requiring proper mitigation strategies.
+- **Timeline Constraints**: The project timeline posed challenges, especially when testing and refining the model with different **prompting techniques**.
+- **Model Inference on AWS**: Running inference on AWS was costly, particularly when deploying the fine-tuned model as a Docker container. This raised concerns regarding both **storage** and **compute costs**.
 
 
+## How I Fixed Challenges 🌟
+
+- To overcome **GPU limitations**, I used **Google Colab ** with **4-bit precision** for efficient fine-tuning.
+
+- To ensure **human preferences and safe responses**, I used a curated **Anthropic dataset** and applied advanced **prompting techniques** for refinement.
+
+- I collaborated with **prompt engineers** to expedite the fine-tuning process and meet the project deadline.
+
+- For inference, I optimized the model deployment with a **multi-stage Docker setup** (using **Docker Compose**) to reduce image size and improve efficiency.
+
+  
 
 ---
 ## Tools (used in this project)
