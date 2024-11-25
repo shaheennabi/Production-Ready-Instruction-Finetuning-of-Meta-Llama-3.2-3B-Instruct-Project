@@ -52,10 +52,8 @@ Close collaboration with the **AI Systems Team** and **prompt engineers** will e
 - **Mitigate harmful outputs** such as hate speech, sexually explicit content, and racial bias by instruct-based **ULMA fine-tuning** using **Anthropic’s Hugging Face dataset**.  
 - Deliver a **production-ready solution** that aligns the model with societal norms, ethical standards, and customer expectations.  
 - **Impress customers** and maintain trust among our **large user base** by ensuring the model generates safe, inclusive, and appropriate content.  
-- Prioritize **GPU resource optimization** by leveraging **QLoRA** techniques, enabling efficient fine-tuning with minimal computational overhead while maintaining model performance.  
-- Strengthen the model’s robustness to eliminate the recurrence of harmful content **post-fine-tuning** through **advanced prompting strategies** and thorough testing.  
-- Ensure the model’s adaptability and compliance with **performance, ethical, and production-ready standards**, balancing resource constraints with deployment readiness.  
-
+- Prioritize **GPU resource optimization** by leveraging **QLoRA** techniques, to efficiently fine-tune the model.
+- Ensure the model is adaptable by using **modular-code** practices to make it **production-ready** while efficiently managing resource constraints.
 
 
 
