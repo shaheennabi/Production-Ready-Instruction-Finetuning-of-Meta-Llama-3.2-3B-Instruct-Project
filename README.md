@@ -24,9 +24,22 @@ To address these issues and ensure alignment with societal norms, ethical standa
 Fine-tuning is considered the **only viable method** to deeply align the model with societal and ethical expectations, ensuring it performs reliably and responsibly in production environments.  
 
 ### **My Role as a Developer**  
-As a developer, I have been entrusted with the task of delivering this fine-tuned model, ensuring it meets both technical specifications and business objectives. 
+As a developer, I am responsible for delivering a fine-tuned **LLaMA 3.1 8B** model that meets the defined Key Performance Indicator (KPI) objectives while aligning with societal and ethical standards.  
 
--I will fine-tune the **LLaMA 3.1 8B** model using high-quality domain-specific datasets to improve its accuracy, reasoning abilities, and integration with external knowledge sources like vector databases. This will address issues such as hallucinations and handling complex queries. To optimize for limited GPU resources, I will apply **4-bit precision quantization** within **Google Colab**, balancing training efficiency with minimal resource usage. Advanced prompting techniques and supervised fine-tuning will help maintain performance despite potential accuracy trade-offs. The fine-tuning process will be part of a modular system designed for scalability, ensuring smooth integration into the company’s long-term AI ecosystem, and enabling future MLOps tool integration. The project must be delivered within a tight timeframe, so I will focus on ensuring efficiency without compromising quality. Close collaboration with the **AI Systems Team** and **prompt engineers** will ensure the fine-tuning process aligns with business goals and customer requirements, making the model effective for real-world use.
+- I will **instruct fine-tune** the model using high-quality **ULMA datasets** from **Anthropic's Hugging Face Dataset** (**Unified-Language-Model-Alignment/Anthropic_HH_Golden**). This process will improve the model’s responses, ensuring it does not generate hateful, sexual, or racist text and aligns with societal norms.  
+
+- Given the constraints of limited GPU resources, I will employ **QLoRA-based 4-bit precision quantization** using **BitsAndBytes**. This involves:  
+  - First **quantizing** the model to 4-bit precision.  
+  - Adapting **LoRA layers** to fine-tune the model within **Google Colab**, optimizing resource usage without sacrificing performance.  
+
+- Advanced prompting techniques and supervised instruction fine-tuning will be incorporated to maintain robust model performance while balancing potential accuracy trade-offs.  
+
+- The fine-tuning process will be implemented as part of a **modular and scalable system**, ensuring seamless integration into the company’s long-term AI ecosystem.  
+
+- This project operates under a **tight deadline**, necessitating a strong focus on efficiency and quality.  
+
+Close collaboration with the **AI Systems Team** and **prompt engineers** will ensure the fine-tuning process meets business objectives and customer requirements, delivering a model that is reliable, ethical, and effective for real-world applications.  
+
 
 
 ---
