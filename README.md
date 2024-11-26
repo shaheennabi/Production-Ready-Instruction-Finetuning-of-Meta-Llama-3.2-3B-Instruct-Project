@@ -118,8 +118,9 @@ The project encountered several challenges, including:
 ---
 
 ###  Project System Design (or pipeline)
-* Everthing related to system design will be explained bit by bit
-
+Remember: For this project **Pipeline** is going to be seprated in two different parts
+- Finetuning
+- Deployment
 
 
 ---
