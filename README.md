@@ -38,7 +38,6 @@ As a developer, I am responsible for delivering a fine-tuned **LLaMA 3.1 8B** mo
 
 - Advanced prompting techniques and supervised instruction fine-tuning will be incorporated to maintain robust model performance while balancing potential accuracy trade-offs.  
 
-- The fine-tuning process will be implemented as part of a **modular and scalable system**, ensuring seamless integration into the company’s long-term AI ecosystem.  
 
 - This project operates under a **tight deadline**, necessitating a strong focus on efficiency and quality.  
 
@@ -62,20 +61,11 @@ The **Instruct-based ULMA fine-tuning** process will be designed with a modular 
 
 I will begin by training the model using **Anthropic's HH Golden dataset** to align it with societal norms, human preferences, and to mitigate harmful content such as hate speech, racism, and hallucinations, while improving response accuracy.
 
-The project will have a clear modular structure, dividing tasks into distinct components for:
-
-- **Data Preprocessing**
-- **Model Fine-Tuning**
-- **Evaluation**
-- **Deployment** (as a REST API via Flask on AWS)
-
 To optimize training efficiency, I will implement **quantization** and **4-bit precision** for faster training within **Google Colab**, utilizing limited GPU resources. 
-
-A robust **CI/CD pipeline** will be set up to ensure continuous testing and integration, enabling seamless updates to the model as we progress.
 
 Additionally, I will apply **advanced prompt engineering techniques** to further guide the model’s responses, ensuring it aligns with human preferences and ethical standards, while addressing the key issues identified (e.g., hate speech, racism, and harmful content generation).
 
-Once deployed, I will gather **customer feedback** to continuously iterate and improve the model before a full-scale product launch, ensuring its readiness and relevance for real-world applications.
+Once, model is finetuned It will be pushed to S3 Bucket, and used for inference to test and gather feedback.
 
 **Note: This is high-level view.**
 
