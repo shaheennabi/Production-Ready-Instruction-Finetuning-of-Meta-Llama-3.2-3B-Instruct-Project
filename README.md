@@ -128,6 +128,7 @@ The project encountered several challenges, including:
 ---
 
 ###  Project System Design (or pipeline)
+* Everthing related to system design will be explained bit by bit
 
 
 
