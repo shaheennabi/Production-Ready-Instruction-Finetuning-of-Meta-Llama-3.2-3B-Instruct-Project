@@ -57,7 +57,7 @@ Close collaboration with the **AI Systems Team** and **prompt engineers** will e
 ---
 ## **My Approach** 🚀
 
-The **Instruct-based ULMA fine-tuning** process will be designed with a modular structure to ensure both immediate performance improvements and long-term adaptability. 
+The **Instruct-based ULMA fine-tuning** process will be done as per industry standards, thorough testing will be done before using model for inference.
 
 I will begin by training the model using **Anthropic's HH Golden dataset** to align it with societal norms, human preferences, and to mitigate harmful content such as hate speech, racism, and hallucinations, while improving response accuracy.
 
