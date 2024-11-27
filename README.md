@@ -117,7 +117,7 @@ The project encountered several challenges, including:
 
 ---
 
-###  Project System Design (or pipeline)
+###  Project System Design (or pipeline) 🎋🌿
 Remember: For this project **Pipeline** is going to be seprated in two different parts
 
 ### **1. Finetuning Pipeline**  
