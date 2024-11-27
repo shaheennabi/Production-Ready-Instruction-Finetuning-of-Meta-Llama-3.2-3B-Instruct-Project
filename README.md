@@ -157,8 +157,143 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 ![Finetuning Pipeline](https://github.com/user-attachments/assets/c2329646-298e-4508-a686-fb827dd5fb3c)
 
+# Fine-tuning Pipeline
+
+So, let's start the **pipeline**:
 
 ---
+
+### 1. **Data Preparation**
+We will begin by **ingesting** the data from **HuggingFace**, specifically the dataset **Unified-Language-Model-Alignment/Anthropic_HH_Golden**.  
+After ingesting, we will **load** the dataset for further processing.
+
+![Data Preparation Code](path/to/screenshot1.png)
+
+---
+
+### 2. **Tokenization**
+Using the **LLaMA model's tokenizer**, we will **tokenize** the dataset, ensuring compatibility with the pre-trained model.
+
+![Tokenization Code](path/to/screenshot2.png)
+
+---
+
+### 3. **Data Splitting**
+The data will be split into **training** and **validation** sets.  
+The **test set**, already included in the dataset, will be reserved for evaluation after successful fine-tuning of the model.
+
+![Data Splitting Code](path/to/screenshot3.png)
+
+---
+
+### 4. **Pre-trained Model Loading**
+We will **load the pre-trained model** from **HuggingFace** for fine-tuning.
+
+![Model Loading Code](path/to/screenshot4.png)
+
+---
+
+### 5. **Quantization**
+Using **bitsandbytes**, we will convert the model's precision from **32-bit** to **4-bit** to reduce memory requirements and improve efficiency.
+
+![Quantization Code](path/to/screenshot5.png)
+
+---
+
+### 6. **Save Quantized Model**
+The **quantized model** will be saved for comparison with the fine-tuned model later.
+
+![Save Quantized Model Code](path/to/screenshot6.png)
+
+---
+
+### 7. **PEFT Application**
+We will apply **PEFT (LoRA layers)** to the **quantized model**, adding trainable parameters to enable efficient fine-tuning.
+
+![PEFT Code](path/to/screenshot7.png)
+
+---
+
+### 8. **Fine-tuning**
+The model will be fine-tuned on the **training data**, with **validation** and **early stopping** mechanisms to prevent overfitting.
+
+![Fine-tuning Code](path/to/screenshot8.png)
+
+---
+
+### 9. **Saving Artifacts**
+The fine-tuned **model** and **tokenizer** will be saved and prepared for upload to **S3**.
+
+![Save Artifacts Code](path/to/screenshot9.png)
+
+---
+
+### 10. **Model Merging**
+We will merge the **quantized base model** and the **fine-tuned LoRA layers**, combining **4-bit** and **32-bit precision** components.
+
+![Model Merging Code](path/to/screenshot10.png)
+
+---
+
+### 11. **Evaluation**
+The merged model will be evaluated on the **test set** using the **perplexity metric** to measure its performance.
+
+![Evaluation Code](path/to/screenshot11.png)
+
+---
+
+### 12. **Testing with Prompts**
+The model's output will be tested using carefully designed **prompts** to verify alignment with desired behaviors.
+
+![Prompt Testing Code](path/to/screenshot12.png)
+
+---
+
+### 13. **Model Comparison**
+We will compare the **quantized model** and the **fine-tuned model** using the same **prompts** to analyze improvements.
+
+![Model Comparison Code](path/to/screenshot13.png)
+
+---
+
+### 14. **Advanced Prompting**
+Advanced **prompting techniques** will be applied to further guide the model's responses and evaluate its alignment with human preferences.
+
+![Advanced Prompting Code](path/to/screenshot14.png)
+
+---
+
+### 15. **Artifact Upload**
+The final **model** and **tokenizer** will be pushed to an **S3 bucket** for storage and deployment.
+
+![Artifact Upload Code](path/to/screenshot15.png)
+
+---
+
+### 16. **End**
+The pipeline concludes here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+
 ## **License 📜✨**  
 This project is licensed under the MIT License.  
 You are free to use, modify, and share this project, as long as proper credit is given to the original contributors.  
