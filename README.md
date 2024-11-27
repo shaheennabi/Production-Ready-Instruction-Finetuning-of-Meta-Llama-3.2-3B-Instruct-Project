@@ -103,18 +103,37 @@ The project encountered several challenges, including:
 
 ---
 
-## Tools and Libraries(used in this project)
+## Tools and Libraries (Used in This Project)
 
-- accelerate
-- torch
-- peft
-- bitsandbytes
-- transformers
-- trl
-- datasets
-- google-colab
-- flask
-- aws
+### - **accelerate**  
+  Used to efficiently distribute and run the training process across hardware (CPU/GPU/TPU), optimizing performance and memory usage.
+
+### - **torch**  
+  Core deep learning library utilized for building, training, and evaluating models.
+
+### - **peft**  
+  Enables Parameter-Efficient Fine-Tuning (LoRA layers), making fine-tuning large models feasible by training only small additional layers.
+
+### - **bitsandbytes**  
+  Facilitates 4-bit quantization of models, reducing memory requirements and enabling efficient handling of large models.
+
+### - **transformers**  
+  Provides pre-trained models and tokenizers for easy integration of state-of-the-art NLP models.
+
+### - **trl**  
+  Used for reinforcement learning with language models, aiding in fine-tuning for alignment with specific tasks or human preferences.
+
+### - **datasets**  
+  A library to seamlessly load and preprocess datasets, including the HuggingFace dataset repository.
+
+### - **google-colab**  
+  Platform used for running and experimenting with the fine-tuning pipeline in a cloud-based environment with GPU support.
+
+### - **flask**  
+  Lightweight framework for serving the fine-tuned model as an API for inference.
+
+### - **aws**  
+  Services like S3 and ECR are used to store and deploy the fine-tuned model and tokenizer, facilitating scalable deployment.
 
 
 ---
