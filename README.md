@@ -120,21 +120,35 @@ The project encountered several challenges, including:
 ###  Project System Design (or pipeline)
 Remember: For this project **Pipeline** is going to be seprated in two different parts
 
-1. **Finetuning Pipeline**:  
-   - The finetuning process will be executed only once.  
-   - It involves **quantizing the model using `bitsandbytes`** for efficiency and then **fine-tuning LoRA layers** in 32-bit precision.  
-   - Once the finetuning is complete, the **LoRA layers and the quantized model are merged**.  
-   - The resulting model, along with the tokenizer, is uploaded to an S3 bucket for storage. This ensures the model is easily accessible for later use during deployment and inference.  
+### **1. Finetuning Pipeline**  
+- The **finetuning process** will be executed only once for this project.  
+- **Quantization using `bitsandbytes`:** The model is quantized to 4-bit precision, optimizing it for faster and more efficient finetuning.  
+- **Fine-tuning LoRA layers:** These are trained in 32-bit precision for better accuracy. After fine-tuning, the LoRA layers are merged back into the quantized model.  
+- Once fine-tuning is complete, the **merged model** along with the tokenizer is uploaded to an **S3 bucket**. This provides a centralized storage location and ensures that the model and tokenizer are ready for deployment or future use.  
+- **Modular Code Structure:**  
+  - The **fine-tuning code** is organized under the `src/finetuning` directory.  
+  - The directory contains separate files for:  
+    - LoRA parameters configuration.  
+    - PEFT (Parameter-Efficient Fine-Tuning) setup.  
+    - Model loading and initialization logic.  
+    - Data ingestion and preprocessing logic.  
+  - While this modular structure is prepared for scalability, **for this project**, the fine-tuning is executed in a **Colab-based Jupyter Notebook**. This is because the computational requirements of fine-tuning necessitate the use of external GPU resources available in Colab. From this experimental notebook, the fine-tuned model and tokenizer are pushed directly to S3.  
+  - The modular code in `src/finetuning` ensures that if fine-tuning is required again in the future, any developer can easily understand and reuse the logic by running the code independently.  
 
-2. **Deployment/Inference Pipeline**:  
-   - This pipeline is entirely separate and focuses on serving the fine-tuned model.  
-   - The application is **containerized using Docker**, including necessary files such as `app.py` (Flask API), utility scripts (`inference.py`, `s3_utils.py`), and `requirements.txt`.  
-   - The Docker image is pushed to **AWS ECR** for deployment.  
-   - During inference, the application will **fetch the fine-tuned model and tokenizer directly from S3**, ensuring flexibility and ease of updates.  
+### **2. Deployment/Inference Pipeline**  
+- This pipeline focuses on serving the fine-tuned model for inference and includes:  
+  - **Containerization:** The deployment logic, including the Flask API (`app.py`), utility scripts (`inference.py`, `s3_utils.py`), and configuration files (e.g., `requirements.txt`, `.env`), is containerized using Docker.  
+  - **Deployment Pipeline:** The Docker image is pushed to **AWS ECR** for deployment. Updates to the deployment logic are handled via **GitHub Actions**, ensuring continuous integration and delivery.  
+  - **Model and Tokenizer Retrieval:** During inference, the application fetches the fine-tuned model and tokenizer directly from S3. This ensures modularity and decouples the deployment process from the fine-tuning pipeline.  
 
-By separating these pipelines, we avoid redundant computations during finetuning and maintain an independent and flexible deployment setup. Any updates to the deployment logic (e.g., changes in the Flask app) can flow through the **CI/CD pipeline (GitHub Actions)**, while the finetuning pipeline remains untouched after the initial training.
+### **Why This Modular Approach?**  
+1. **Decoupling Finetuning and Deployment:**  
+   - The fine-tuning process is resource-intensive and performed only once. By separating it from the deployment pipeline, we avoid unnecessary dependencies.  
+2. **Future Scalability:**  
+   - The modular structure in `src/finetuning` ensures that developers can independently run and update the fine-tuning logic if needed. For example, if a company or developer with access to high-end hardware wants to fine-tune the model on new data, they can directly use this modular codebase.  
+3. **Deployment Flexibility:**  
+   - The deployment pipeline is designed for continuous updates, allowing enhancements to the inference API, new features, or configuration changes without impacting the fine-tuning code.  
 
-This modular approach aligns with industry standards and ensures scalability for future needs, such as adapting the pipeline for larger datasets or enabling fine-tuning by users with access to more powerful hardware.
 
 
 
