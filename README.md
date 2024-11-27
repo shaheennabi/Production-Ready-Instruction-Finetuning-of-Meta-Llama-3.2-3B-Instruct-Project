@@ -174,14 +174,15 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 *This is the diagram, of how the pipeline will look:*
 
-![Finetuning Pipeline](https://github.com/user-attachments/assets/c2329646-298e-4508-a686-fb827dd5fb3c)
+![Finetuning Pipeline](https://github.com/user-attachments/assets/1057f4de-fff6-46ab-a290-dfc3f9360010)
+
 
 ## Fine-tuning Pipeline 💥
 ---
 
 ### 1. **Data Preparation**
 We will begin by **ingesting** the data from **HuggingFace**, specifically the dataset **Unified-Language-Model-Alignment/Anthropic_HH_Golden**.  
-After ingesting, we will **load** the dataset for further processing, and we will transform data into **llama instruction** format that llama accepts for finetuning.
+After ingesting, we will **load** the dataset, and we will transform dataset into **llama instruction** format that llama accepts for finetuning.
 
 ![Data Preparation Code](path/to/screenshot1.png)
 
