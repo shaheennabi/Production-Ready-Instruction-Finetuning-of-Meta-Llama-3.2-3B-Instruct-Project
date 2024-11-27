@@ -1,5 +1,6 @@
 # 🎋🌿 **Production-Ready ULMA Instruction Fine-Tuning of Meta LLaMA 3.1 8B Project** 🌿🎉  
-*Note: If you are a company training your own language models or a developer practicing fine-tuning, you can adopt this approach to align your model with human preferences effectively. This project incorporates a robust pipeline designed to prevent your model from generating responses that are racist, hateful, or socially harmful.*
+*Note: If you are a company training your own language models or a developer practicing fine-tuning, you can adopt this approach to align your model with human preferences effectively. This project incorporates a robust pipeline designed to prevent your model from generating responses that are racist, hateful, or socially harmful.* 
+          ** 🚀 Clone this Repository and boom!**
 
 ## **Problem Statement**  
 ---  
