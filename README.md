@@ -174,7 +174,7 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 *This is the diagram, of how the pipeline will look:*
 
-![Finetuning Pipeline](https://github.com/user-attachments/assets/1057f4de-fff6-46ab-a290-dfc3f9360010)
+![Finetuning Pipeline](https://github.com/user-attachments/assets/86052bbf-a95c-4a67-9242-f6002494d246)
 
 
 ## Fine-tuning Pipeline 💥
