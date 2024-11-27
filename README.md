@@ -151,7 +151,7 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 ## Now let's Talk about the Fine-tuning Pipeline  🚀
 
-- *This is the diagram how the pipeline will look:
+*This is the diagram how the pipeline will look:*
 
 
 ---
