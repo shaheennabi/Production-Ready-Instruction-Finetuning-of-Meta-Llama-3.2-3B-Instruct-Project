@@ -149,7 +149,9 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 3. **Deployment Flexibility:**  
    - The deployment pipeline is designed for continuous updates, allowing enhancements to the inference API, new features, or configuration changes without impacting the fine-tuning code.  
 
+## Now let's Talk about the Fine-tuning Pipeline  🚀
 
+- *This is the diagram how the pipeline will look:
 
 
 ---
