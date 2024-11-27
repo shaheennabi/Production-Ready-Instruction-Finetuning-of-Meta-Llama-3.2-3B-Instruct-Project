@@ -119,8 +119,23 @@ The project encountered several challenges, including:
 
 ###  Project System Design (or pipeline)
 Remember: For this project **Pipeline** is going to be seprated in two different parts
-- Finetuning
-- Deployment
+
+1. **Finetuning Pipeline**:  
+   - The finetuning process will be executed only once.  
+   - It involves **quantizing the model using `bitsandbytes`** for efficiency and then **fine-tuning LoRA layers** in 32-bit precision.  
+   - Once the finetuning is complete, the **LoRA layers and the quantized model are merged**.  
+   - The resulting model, along with the tokenizer, is uploaded to an S3 bucket for storage. This ensures the model is easily accessible for later use during deployment and inference.  
+
+2. **Deployment/Inference Pipeline**:  
+   - This pipeline is entirely separate and focuses on serving the fine-tuned model.  
+   - The application is **containerized using Docker**, including necessary files such as `app.py` (Flask API), utility scripts (`inference.py`, `s3_utils.py`), and `requirements.txt`.  
+   - The Docker image is pushed to **AWS ECR** for deployment.  
+   - During inference, the application will **fetch the fine-tuned model and tokenizer directly from S3**, ensuring flexibility and ease of updates.  
+
+By separating these pipelines, we avoid redundant computations during finetuning and maintain an independent and flexible deployment setup. Any updates to the deployment logic (e.g., changes in the Flask app) can flow through the **CI/CD pipeline (GitHub Actions)**, while the finetuning pipeline remains untouched after the initial training.
+
+This modular approach aligns with industry standards and ensures scalability for future needs, such as adapting the pipeline for larger datasets or enabling fine-tuning by users with access to more powerful hardware.
+
 
 
 ---
