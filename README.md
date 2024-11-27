@@ -103,7 +103,7 @@ The project encountered several challenges, including:
 
 ---
 
-## Tools and Libraries (Used in This Project)
+## Tools and Libraries (Used in This Project) 🎊
 
 ### - **accelerate**  
   Used to efficiently distribute and run the training process across hardware (CPU/GPU/TPU), optimizing performance and memory usage.
@@ -176,7 +176,7 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 ![Finetuning Pipeline](https://github.com/user-attachments/assets/c2329646-298e-4508-a686-fb827dd5fb3c)
 
-# Fine-tuning Pipeline
+# Fine-tuning Pipeline 💥
 ---
 
 ### 1. **Data Preparation**
