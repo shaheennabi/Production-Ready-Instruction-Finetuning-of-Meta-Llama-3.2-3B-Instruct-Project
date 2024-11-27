@@ -237,57 +237,49 @@ The model will be fine-tuned on the **training data**, with **validation** and *
 ![Fine-tuning Code](path/to/screenshot8.png)
 
 
-
-### 9. **Saving Artifacts**
-The fine-tuned **model** and **tokenizer** will be saved and prepared for upload to **S3**.
-
-![Save Artifacts Code](path/to/screenshot9.png)
-
-
-
-### 10. **Model Merging**
+### 9. **Model Merging**
 We will merge the **quantized base model** and the **fine-tuned LoRA layers**, combining **4-bit** and **32-bit precision** components.
 
 ![Model Merging Code](path/to/screenshot10.png)
 
 
 
-### 11. **Evaluation**
+### 10. **Evaluation**
 The merged model will be evaluated on the **test set** using the **perplexity metric** to measure its performance.
 
 ![Evaluation Code](path/to/screenshot11.png)
 
 
 
-### 12. **Testing with Prompts**
+### 11. **Testing with Prompts**
 The model's output will be tested using carefully designed **prompts** to verify alignment with desired behaviors.
 
 ![Prompt Testing Code](path/to/screenshot12.png)
 
 
 
-### 13. **Model Comparison**
+### 12. **Model Comparison**
 We will compare the **quantized model** and the **fine-tuned model** using the same **prompts** to analyze improvements.
 
 ![Model Comparison Code](path/to/screenshot13.png)
 
 
 
-### 14. **Advanced Prompting**
+### 13. **Advanced Prompting**
 Advanced **prompting techniques** will be applied to further guide the model's responses and evaluate its alignment with human preferences.
 
 ![Advanced Prompting Code](path/to/screenshot14.png)
 
 
 
-### 15. **Artifact Upload**
+### 14. **Artifact Upload**
 The final **model** and **tokenizer** will be pushed to an **S3 bucket** for storage and deployment.
 
 ![Artifact Upload Code](path/to/screenshot15.png)
 
 
 
-### 16. **End**
+### 15. **End**
 The fine-tuning pipeline concludes here
 
 ---
