@@ -181,7 +181,7 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 ### 1. **Data Preparation**
 We will begin by **ingesting** the data from **HuggingFace**, specifically the dataset **Unified-Language-Model-Alignment/Anthropic_HH_Golden**.  
-After ingesting, we will **load** the dataset for further processing.
+After ingesting, we will **load** the dataset for further processing, and we will transform data into **llama instruction** format that llama accepts for finetuning.
 
 ![Data Preparation Code](path/to/screenshot1.png)
 
