@@ -288,6 +288,8 @@ The fine-tuning pipeline concludes here
 
 *This is the diagram, of how the pipeline will look:*
 
+![Deployment Pipeline](https://github.com/user-attachments/assets/83920759-ebe0-445b-9654-3fb86b3e6680)
+
 
 
 ## Deployment/Inference Pipeline 💥
