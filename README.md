@@ -343,7 +343,60 @@ When a user enters a prompt via the Flask Web UI:
 The output is generated and returned to the user via the Flask endpoint.
 
 ---
+## Guide for Developers 🌿🎇✨💚🎆🌱🎇✨💚🎆
 
+If you want to build on top of this project, here are a few recommendations:
+
+### Deployment Pipeline 🌱
+The deployment pipeline will remain the same as outlined in the project. You can follow the same steps to build, test, and deploy the model using Docker, ECR, and EC2.
+
+### Scripts for Deployment 📂
+All the necessary scripts for deployment are available in the `scripts` folder:
+
+- `ecr_scripts.sh`: For managing Docker images and pushing them to AWS ECR.
+- `ec2_scripts.sh`: For deploying and running the Docker container on EC2.
+
+### Fine-tuning 🌿
+I recommend performing fine-tuning in Google Colab notebooks to save on computational resources. Colab provides a free GPU, making it an excellent environment for model fine-tuning.
+
+### Environment Setup 🌱
+To set up your environment for development or deployment:
+
+1. **Create Conda Environment**:
+    - Run the following command to create a Conda environment:
+    ```bash
+    conda create -n <env_name> python=3.10
+    ```
+
+2. **Activate the Environment**:
+    - Activate the newly created environment:
+    ```bash
+    conda activate <env_name>
+    ```
+
+3. **Install Dependencies**:
+    - Install the necessary dependencies listed in `requirements.txt`:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Environment Variables**:
+    - Set up environment variables for AWS and other credentials. You can use `.env` files or export them directly in your terminal:
+    ```bash
+    export AWS_ACCESS_KEY_ID=<your_access_key>
+    export AWS_SECRET_ACCESS_KEY=<your_secret_key>
+    ```
+
+### Tree Structure 🌱
+To keep the README concise and organized, the detailed project tree structure is stored in a separate file: [tree_structure.md](tree_structure.md). This helps prevent the README from becoming too long and difficult to navigate.
+
+🎇🎆✨💚🎇🎆✨💚
+
+Happy coding and deploying! 🎉💚
+
+🎆💚✨🎉🎇💚🎆✨
+
+---
 
 ## **License 📜✨**  
 This project is licensed under the MIT License.  
