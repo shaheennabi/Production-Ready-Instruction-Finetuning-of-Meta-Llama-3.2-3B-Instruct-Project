@@ -13,11 +13,6 @@ updating soon:
 
 ---  
 
-# 🌟 **Fine-Tuning LLaMA 3.2 3B for Kannada Language Adaptation** 🌟  
-
-At **XYZ Company**, we adopted the **LLaMA 3.2 (3B) model** as the core **AI foundation for our product** to provide cutting-edge AI-driven solutions. However, due to our **large Kannada-speaking user base**, the model required fine-tuning to better cater to their needs. After analyzing its performance, our **manager decided** that fine-tuning on a Kannada-specific dataset was essential to enhance the model’s effectiveness.
-
----
 
 # 🌟 **Fine-Tuning LLaMA 3.2 3B for Kannada Language Adaptation** 🌟  
 
