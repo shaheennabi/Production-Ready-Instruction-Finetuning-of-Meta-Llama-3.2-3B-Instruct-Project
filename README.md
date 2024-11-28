@@ -132,8 +132,8 @@ The project encountered several challenges, including:
 ### - **flask**  
   Lightweight framework for serving the fine-tuned model as an API for inference.
 
-### - **aws**  
-  Services like S3 and ECR are used to store and deploy the fine-tuned model and tokenizer, facilitating scalable deployment.
+### - **boto3**  
+  It is used to interact with **AWS S3** for downloading, uploading, and checking the existence of the model and tokenizer files in this project.
 
 
 ---
@@ -158,15 +158,19 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 ### **2. Deployment/Inference Pipeline**  
 - This pipeline focuses on serving the fine-tuned model for inference and includes:  
-  - **Containerization:** The deployment logic, including the Flask API (`app.py`), utility scripts (`inference.py`, `s3_utils.py`), and configuration files (e.g., `requirements.txt`, `.env`), is containerized using Docker.  
-  - **Deployment Pipeline:** The Docker image is pushed to **AWS ECR** for deployment. Updates to the deployment logic are handled via **GitHub Actions**, ensuring continuous integration and delivery.  
+  - **Containerization:** The deployment logic, including the Flask API (`app.py`), utility scripts (`inference.py`, `s3_utils.py`), and configuration files (e.g., `requirements.txt`, `.env`), is containerized using Docker.
+    
+  - **Deployment Pipeline:** The Docker image is pushed to **AWS ECR** for deployment. Updates to the deployment logic are handled via **GitHub Actions**, ensuring continuous integration and delivery.
+    
   - **Model and Tokenizer Retrieval:** During inference, the application fetches the fine-tuned model and tokenizer directly from S3. This ensures modularity and decouples the deployment process from the fine-tuning pipeline.  
 
 ### **Why This Modular Approach?**  
 1. **Decoupling Finetuning and Deployment:**  
-   - The fine-tuning process is resource-intensive and performed only once. By separating it from the deployment pipeline, we avoid unnecessary dependencies.  
+   - The fine-tuning process is resource-intensive and performed only once. By separating it from the deployment pipeline, we avoid unnecessary dependencies.
+     
 2. **Future Scalability:**  
    - The modular structure in `src/finetuning` ensures that developers can independently run and update the fine-tuning logic if needed. For example, if a company or developer with access to high-end hardware wants to fine-tune the model on new data, they can directly use this modular codebase. Finetuning is a one time task so modularization of finetuning is not important, but we can modularize **inference or deployment** part.
+     
 3. **Deployment Flexibility:**  
    - The deployment pipeline is designed for continuous updates, allowing enhancements to the inference API, new features, or configuration changes without impacting the fine-tuning code.  
 
@@ -288,25 +292,47 @@ The fine-tuning pipeline concludes here
 
 *This is the diagram, of how the pipeline will look:*
 
+![Deployment Pipeline](https://github.com/user-attachments/assets/83920759-ebe0-445b-9654-3fb86b3e6680)
+
 
 
 ## Deployment/Inference Pipeline 💥
 
+### 1. Start  
+A new commit is pushed to the main branch, triggering the **Continuous Integration (CI)** process.
 
 
 
+### 2. Continuous Integration  
+The **GitHub Actions Self-Hosted Runner** listens for changes in the main branch. It prepares the build process, and starts the Docker image build process.
 
 
 
+### 3. Continuous Delivery  
+- The **self-hosted runner** builds the Docker image using the `deployment` folder (which includes `app.py` and other required files).  
+- The built Docker image is pushed to the **ECR (Elastic Container Registry)** for storage.  
+- This completes the Continuous Delivery (CD) step.  
 
 
 
+### 4. Continuous Deployment  
+- On EC2, the **Flask endpoint** will pull the Docker image from **ECR** automatically using deployment scripts.  
+- The Flask app is then run inside the container to expose the endpoint.
 
 
+
+### 5. Input Prompt  
+When a user enters a prompt via the Flask Web UI:  
+- The system first checks if the model and tokenizer are already loaded in the EC2 instance's memory.  
+- If not, it fetches them from the **S3 bucket** and loads them into memory.  
+- The input is processed and passed to the model for inference.
+
+
+
+### 6. End  
+The output is generated and returned to the user via the Flask endpoint.
 
 ---
-
-
 
 
 ## **License 📜✨**  
