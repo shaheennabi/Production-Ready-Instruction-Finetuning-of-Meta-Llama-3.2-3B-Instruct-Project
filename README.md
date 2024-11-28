@@ -390,7 +390,7 @@ To set up your environment for development or deployment:
 ### Tree Structure 🌱
 To keep the README concise and organized, the detailed project tree structure is stored in a separate file: [tree_structure.md](tree_structure.md). This helps prevent the README from becoming too long and difficult to navigate.
 
-🎇🎆✨💚🎇🎆✨💚
+
 
 Happy coding and deploying! 🎉💚
 
