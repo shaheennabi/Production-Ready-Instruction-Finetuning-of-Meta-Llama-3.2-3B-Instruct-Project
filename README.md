@@ -99,52 +99,13 @@ The project faced several challenges, including:
 
 
 
-## How I Fixed Challenges 🌟
+## **How I Fixed Challenges** 🌟  
 
-- To overcome **GPU limitations**, I used **Google Colab ** with **4-bit precision** for efficient fine-tuning.
+- To address **GPU limitations**, I utilized **Google Colab** with **4-bit precision quantization** to enable efficient fine-tuning within the available resource constraints.  
 
-- To ensure **human preferences and safe responses**, I used a curated **Anthropic dataset** and applied advanced **prompting techniques** for refinement.
+- I worked closely with **prompt engineers** to accelerate the fine-tuning process, ensuring we met the project deadline despite the tight timeline.  
 
-- I collaborated with **prompt engineers** to expedite the fine-tuning process and meet the project deadline.
-
-- For inference, I optimized the model deployment with a **multi-stage Docker setup** (using **Docker Compose**) to reduce image size and improve efficiency.
-
----
-*Note:* *Supervised Instruction* *Unified-Language-Model-Alignment (ULMA)* *has been performed on the* *Llama 3.1 8B parameter model.* *While further improvements could have been achieved even after finetuning using* *Reward Models* *and* *Reinforcement Learning from Human Feedback (RLHF),* *I believe that ULMA instruction fine-tuning is sufficient for this project.* *The* *Llama model* *itself is robust, and my primary focus was on addressing biased or harmful responses by aligning it with ethical and accurate outputs through instruction tuning.* *As I told in the beginning that* **I am pretending that I am working at XYX company** *for going further with* *Reward Model* *and* *RLHF,* *it would require developing a reward model, which involves human experts—a resource often available only to larger companies with dedicated research teams.* *For this problem, instruction tuning effectively meets the requirements.*
-
----
-
-## Tools and Libraries (Used in This Project) 🎊
-
-### - **accelerate**  
-  Used to efficiently distribute and run the training process across hardware (CPU/GPU/TPU), optimizing performance and memory usage.
-
-### - **torch**  
-  Core deep learning library utilized for building, training, and evaluating models.
-
-### - **peft**  
-  Enables Parameter-Efficient Fine-Tuning (LoRA layers), making fine-tuning large models feasible by training only small additional layers.
-
-### - **bitsandbytes**  
-  Facilitates 4-bit quantization of models, reducing memory requirements and enabling efficient handling of large models.
-
-### - **transformers**  
-  Provides pre-trained models and tokenizers for easy integration of state-of-the-art NLP models.
-
-### - **trl**  
-  Used for reinforcement learning with language models, aiding in fine-tuning for alignment with specific tasks or human preferences.
-
-### - **datasets**  
-  A library to seamlessly load and preprocess datasets, including the HuggingFace dataset repository.
-
-### - **google-colab**  
-  Platform used for running and experimenting with the fine-tuning pipeline in a cloud-based environment with GPU support.
-
-### - **flask**  
-  Lightweight framework for serving the fine-tuned model as an API for inference.
-
-### - **boto3**  
-  It is used to interact with **AWS S3** for downloading, uploading, and checking the existence of the model and tokenizer files in this project.
+- For inference, I optimized model deployment by implementing a **multi-stage Docker setup** using **Docker Compose**, which helped reduce image size and enhance efficiency, lowering operational costs.  
 
 
 ---
@@ -154,16 +115,10 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 ### **1. Finetuning Pipeline**  
 - The **finetuning process** will be executed only once for this project.  
-- **Quantization using `bitsandbytes`:** The model is quantized to 4-bit precision, optimizing it for faster and more efficient finetuning.  
-- **Fine-tuning LoRA layers:** These are trained in 32-bit precision for better accuracy. After fine-tuning, the LoRA layers are merged back into the quantized model.  
+- **Quantization using `unsloth`:** The model is quantized to 4-bit precision, optimizing it for faster and more efficient finetuning.  
+- **Fine-tuning LoRA layers:** These are trained in 16-bit precision for better accuracy. After fine-tuning, the LoRA layers are merged back into the quantized model.  
 - Once fine-tuning is complete, the **merged model** along with the tokenizer is uploaded to an **S3 bucket**. This provides a centralized storage location and ensures that the model and tokenizer are ready for deployment or future use.  
-- **Modular Code Structure:**  
-  - The **fine-tuning code** is organized under the `src/finetuning` directory.  
-  - The directory contains separate files for:  
-    - LoRA parameters configuration.  
-    - PEFT (Parameter-Efficient Fine-Tuning) setup.  
-    - Model loading and initialization logic.  
-    - Data ingestion and preprocessing logic.  
+
   - While this modular structure is prepared for scalability, **for this project**, the fine-tuning is executed in a **Colab-based Jupyter Notebook**. This is because the computational requirements of fine-tuning necessitate the use of external GPU resources available in Colab. From this experimental notebook, the fine-tuned model and tokenizer are pushed directly to S3.  
   - The modular code in `src/finetuning` ensures that if fine-tuning is required again in the future, any developer can easily understand and reuse the logic by running the code independently.  
 
