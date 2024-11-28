@@ -63,6 +63,7 @@ The **Instruct-based ULMA fine-tuning** process will be done as per industry sta
 
 I will begin by training the model using **Anthropic's HH Golden dataset** to align it with societal norms, human preferences, and to mitigate harmful content such as hate speech, racism, and hallucinations, while improving response accuracy.
 
+
 To optimize training efficiency, I will implement **quantization** and **4-bit precision** for faster training within **Google Colab**, utilizing limited GPU resources. 
 
 Additionally, I will apply **advanced prompt engineering techniques** to further guide the model’s responses, ensuring it aligns with human preferences and ethical standards, while addressing the key issues identified (e.g., hate speech, racism, and harmful content generation).
@@ -78,6 +79,15 @@ Once, model is finetuned It will be pushed to S3 Bucket, and used for inference 
 
 
 --- 
+## Dataset Information 🎉
+
+The dataset used in this project consists of two files:
+
+- **train.jsonl**: Contains 42,500 rows of training data.
+- **test.jsonl**: Contains 2,310 rows of test data.
+  
+---
+
 ## Challenges Encountered 🎋
 
 The project encountered several challenges, including:
