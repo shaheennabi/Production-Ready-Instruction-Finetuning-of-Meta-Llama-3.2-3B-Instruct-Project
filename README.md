@@ -88,23 +88,15 @@ This approach ensures a resource-efficient, scalable, and production-ready model
 
 
 --- 
-## Dataset Information 🎉
 
-The dataset used in this project consists of two files:
+## **Challenges Encountered** 🎋  
 
-- **train.jsonl**: Contains 42,500 rows of training data.
-- **test.jsonl**: Contains 2,310 rows of test data.
-  
----
+The project faced several challenges, including:  
 
-## Challenges Encountered 🎋
+- **Limited GPU Resources**: Fine-tuning a large model was challenging due to the scarcity of available GPU resources.  
+- **Timeline Constraints**: A tight project timeline, driven by the large user base, required rapid action and attention.  
+- **Model Inference on AWS**: Running inference on AWS incurred high costs, raising concerns around both **storage** and **compute expenses**.  
 
-The project encountered several challenges, including:
-
-- **Limited GPU Resources**: Fine-tuning a large model was difficult due to the scarcity of available GPU resources.
-- **Human Preferences and Safe Responses**: Ensuring the model generated **accurate responses** without harmful or biased content was a key concern, requiring proper mitigation strategies.
-- **Timeline Constraints**: The project timeline posed significant challenges, due to the large user base of the model, requiring quick action and immediate attention.
-- **Model Inference on AWS**: Running inference on AWS was costly. This raised concerns regarding both **storage** and **compute costs**.
 
 
 ## How I Fixed Challenges 🌟
