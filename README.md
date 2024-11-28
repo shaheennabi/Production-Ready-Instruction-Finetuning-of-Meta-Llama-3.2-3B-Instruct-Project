@@ -343,7 +343,7 @@ When a user enters a prompt via the Flask Web UI:
 The output is generated and returned to the user via the Flask endpoint.
 
 ---
-## Guide for Developers 🌿🎇✨💚🎆🌱🎇✨💚🎆
+## Guide for Developers 🌿🎇✨💚🎆🌱🎇✨💚🎆 (this will be updated, post project completion)
 
 If you want to build on top of this project, here are a few recommendations:
 
