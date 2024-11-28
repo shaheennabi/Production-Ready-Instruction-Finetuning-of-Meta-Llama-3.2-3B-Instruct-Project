@@ -301,25 +301,25 @@ The fine-tuning pipeline concludes here
 ### 1. Start  
 A new commit is pushed to the main branch, triggering the **Continuous Integration (CI)** process.
 
----
+
 
 ### 2. Continuous Integration  
 The **GitHub Actions Self-Hosted Runner** listens for changes in the main branch. It prepares the build process, and starts the Docker image build process.
 
----
+
 
 ### 3. Continuous Delivery  
 - The **self-hosted runner** builds the Docker image using the `deployment` folder (which includes `app.py` and other required files).  
 - The built Docker image is pushed to the **ECR (Elastic Container Registry)** for storage.  
 - This completes the Continuous Delivery (CD) step.  
 
----
+
 
 ### 4. Continuous Deployment  
 - On EC2, the **Flask endpoint** will pull the Docker image from **ECR** automatically using deployment scripts.  
 - The Flask app is then run inside the container to expose the endpoint.
 
----
+
 
 ### 5. Input Prompt  
 When a user enters a prompt via the Flask Web UI:  
@@ -327,7 +327,7 @@ When a user enters a prompt via the Flask Web UI:
 - If not, it fetches them from the **S3 bucket** and loads them into memory.  
 - The input is processed and passed to the model for inference.
 
----
+
 
 ### 6. End  
 The output is generated and returned to the user via the Flask endpoint.
