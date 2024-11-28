@@ -132,8 +132,8 @@ The project encountered several challenges, including:
 ### - **flask**  
   Lightweight framework for serving the fine-tuned model as an API for inference.
 
-### - **aws**  
-  Services like S3 and ECR are used to store and deploy the fine-tuned model and tokenizer, facilitating scalable deployment.
+### - **boto3**  
+  It is used to interact with **AWS S3** for downloading, uploading, and checking the existence of the model and tokenizer files in this project.
 
 
 ---
@@ -158,15 +158,19 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 ### **2. Deployment/Inference Pipeline**  
 - This pipeline focuses on serving the fine-tuned model for inference and includes:  
-  - **Containerization:** The deployment logic, including the Flask API (`app.py`), utility scripts (`inference.py`, `s3_utils.py`), and configuration files (e.g., `requirements.txt`, `.env`), is containerized using Docker.  
-  - **Deployment Pipeline:** The Docker image is pushed to **AWS ECR** for deployment. Updates to the deployment logic are handled via **GitHub Actions**, ensuring continuous integration and delivery.  
+  - **Containerization:** The deployment logic, including the Flask API (`app.py`), utility scripts (`inference.py`, `s3_utils.py`), and configuration files (e.g., `requirements.txt`, `.env`), is containerized using Docker.
+    
+  - **Deployment Pipeline:** The Docker image is pushed to **AWS ECR** for deployment. Updates to the deployment logic are handled via **GitHub Actions**, ensuring continuous integration and delivery.
+    
   - **Model and Tokenizer Retrieval:** During inference, the application fetches the fine-tuned model and tokenizer directly from S3. This ensures modularity and decouples the deployment process from the fine-tuning pipeline.  
 
 ### **Why This Modular Approach?**  
 1. **Decoupling Finetuning and Deployment:**  
-   - The fine-tuning process is resource-intensive and performed only once. By separating it from the deployment pipeline, we avoid unnecessary dependencies.  
+   - The fine-tuning process is resource-intensive and performed only once. By separating it from the deployment pipeline, we avoid unnecessary dependencies.
+     
 2. **Future Scalability:**  
    - The modular structure in `src/finetuning` ensures that developers can independently run and update the fine-tuning logic if needed. For example, if a company or developer with access to high-end hardware wants to fine-tune the model on new data, they can directly use this modular codebase. Finetuning is a one time task so modularization of finetuning is not important, but we can modularize **inference or deployment** part.
+     
 3. **Deployment Flexibility:**  
    - The deployment pipeline is designed for continuous updates, allowing enhancements to the inference API, new features, or configuration changes without impacting the fine-tuning code.  
 
@@ -329,12 +333,6 @@ When a user enters a prompt via the Flask Web UI:
 The output is generated and returned to the user via the Flask endpoint.
 
 ---
-
-
-
----
-
-
 
 
 ## **License 📜✨**  
