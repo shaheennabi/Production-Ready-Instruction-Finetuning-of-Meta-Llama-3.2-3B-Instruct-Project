@@ -217,28 +217,24 @@ We will merge the **quantized base model** and the **fine-tuned LoRA layers**, c
 ### 10. **Evaluation**
 The merged model will be evaluated on the **test set** using the **perplexity metric** to measure its performance.
 
-![Evaluation Code](path/to/screenshot11.png)
 
 
 
 ### 11. **Testing with Prompts**
 The model's output will be tested using carefully designed **prompts** to verify alignment with desired behaviors.
 
-![Prompt Testing Code](path/to/screenshot12.png)
 
 
 
 ### 12. **Model Comparison**
 We will compare the **quantized model** and the **fine-tuned model** using the same **prompts** to analyze improvements.
 
-![Model Comparison Code](path/to/screenshot13.png)
 
 
 
 ### 13. **Advanced Prompting**
 Advanced **prompting techniques** will be applied to further guide the model's responses and evaluate its alignment with human preferences.
 
-![Advanced Prompting Code](path/to/screenshot14.png)
 
 
 
