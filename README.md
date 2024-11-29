@@ -245,7 +245,6 @@ Advanced **prompting techniques** will be applied to further guide the model's r
 ### 14. **Artifact Upload**
 The final **model** and **tokenizer** will be pushed to an **S3 bucket** for storage and deployment.
 
-![Artifact Upload Code](path/to/screenshot15.png)
 
 
 
