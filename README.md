@@ -153,6 +153,12 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 ---
 
+## Deployment/Inference Pipeline 💥
+---
+
+
+---
+
 ## Ok, so now let's Talk about the Deployment/Inference Pipeline  🚀
 
 *This is the diagram, of how the pipeline will look:*
