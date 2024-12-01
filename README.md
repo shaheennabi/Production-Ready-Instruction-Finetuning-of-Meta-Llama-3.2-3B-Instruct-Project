@@ -202,11 +202,13 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 <img width="640" alt="Loading  Model" src="https://github.com/user-attachments/assets/89013450-1bb1-4a29-9ad4-2a620004064e">
 
 
-- **`max_seq_length`**: Specifies the maximum token length for inputs, here set to 2048 tokens.
-- **`dtype`**: Auto-detects the optimal data type for model weights, usually `float32` or `float16`.
-- **`load_in_4bit`**: Enables 4-bit quantization, reducing memory usage while preserving model performance.
-- **model_name** = unsloth/Llama-3.2-3B-Instruct, which will be used for fine-tuning and is sourced from Unsloth.
-*We are getting **quantized_model** and **tokenizer** by passing these params into **FastLanguageModel.from_pretrained**.*
+- **`max_seq_length`**: Specifies the maximum token length for inputs, set to 2048 tokens in this case.
+- **`dtype`**: Auto-detects the optimal data type for model weights, typically `float32` or `float16`.
+- **`load_in_4bit`**: Enables 4-bit quantization, reducing memory usage while maintaining model performance.
+- **`model_name`**: `unsloth/Llama-3.2-3B-Instruct`, which will be used for fine-tuning and is sourced from Unsloth.
+
+*We obtain the **quantized_model** and **tokenizer** by passing these parameters into **FastLanguageModel.from_pretrained**.*
+
 
 
 
