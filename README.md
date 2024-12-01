@@ -2,7 +2,7 @@
 
 ## **Problem Statement**  
 ---  
-*Note: This project simulates an industry-standard scenario where I am assuming the role of a developer at XYZ Company. The LLaMA 3.2 (3B) model has been successfully deployed in production as part of our product. However, to better serve our large user base of Kannada speakers, fine-tuning the model on a Kannada-specific dataset has become essential.*  
+*Note: This project simulates an industry-standard scenario where I am assuming the role of a developer at XYZ Company. The LLaMA 3.2 (3B) model has been successfully deployed in production as part of our product. However, to better serve our large user base of Kannada speakers, fine-tuning the model on a Kannada-specific conversation dataset has become essential.*  
 
 
 
