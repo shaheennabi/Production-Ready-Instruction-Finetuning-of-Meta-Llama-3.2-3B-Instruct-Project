@@ -186,6 +186,20 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 <img width="656" alt="Importing Necessary Libraries" src="https://github.com/user-attachments/assets/dfb4fdee-0513-4202-b5d1-167e15689354">
 
+### FastLanguageModel Fine-Tuning with 4-bit Precision
+
+We will fine-tune the **FastLanguageModel** with **4-bit precision** using **SFTTrainer**. Key components include:
+
+- **FastLanguageModel**: Fine-tuned in 4-bit precision for optimized performance and reduced memory usage.
+- **SFTTrainer**: Efficiently handles the training process with large models.
+- **AutoModelForCausalLM & AutoTokenizer**: Automatically load the pre-trained model and tokenizer for causal language tasks.
+- **TrainingArguments**: Configures training settings such as batch size and learning rate.
+- **Torch**: Powers the training process using PyTorch.
+- **Datasets**: Used for dataset loading and processing.
+- **PeftModel** It is used to apply techniques like LoRA to pre-trained models, enabling task-specific adaptations with fewer trainable parameters.
+
+
+
 ###  Loading the Model
 
 <img width="640" alt="Loading  Model" src="https://github.com/user-attachments/assets/89013450-1bb1-4a29-9ad4-2a620004064e">
