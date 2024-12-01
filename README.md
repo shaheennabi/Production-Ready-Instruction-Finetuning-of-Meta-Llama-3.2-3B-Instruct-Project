@@ -206,7 +206,8 @@ The output is generated and returned to the user via the Flask endpoint.
 ---
 ## Guide for Developers 🌿🎇✨💚🎆🌱🎇✨💚🎆 (this will be updated, post project completion)
 
-Dear **developers** pipeline is so simple, I recommend to refer to the pipeline diagram, it will give you proper look.
+Dear **developers** pipeline is so simple, I recommend to refer to the pipeline diagram, it will give you proper look. I have seperated the pipeline into 2 segments for ease.
+
 If you want to build on top of this project, here are a few recommendations:
 
 ### Deployment Pipeline 🌱
