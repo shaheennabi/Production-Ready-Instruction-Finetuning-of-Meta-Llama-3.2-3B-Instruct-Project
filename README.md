@@ -183,6 +183,9 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 !pip install xformers[torch2]  # Install xformers built for PyTorch 2.x
 ```
 
+### Importing Necessary Libraries
+
+<img width="656" alt="Importing Necessary Libraries" src="https://github.com/user-attachments/assets/dfb4fdee-0513-4202-b5d1-167e15689354">
 
 
 
