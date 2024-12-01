@@ -82,7 +82,7 @@ This approach ensures a resource-efficient, scalable, and production-ready model
 **Note: This is high-level view.**
 
 
-![CI_CD Diagram (3)](https://github.com/user-attachments/assets/b2aefea2-a17e-4242-9225-8701f5bbed3c)
+![overview](https://github.com/user-attachments/assets/7b743e25-35b1-4c1e-a48c-20c62fc117ab)
 
 
 
