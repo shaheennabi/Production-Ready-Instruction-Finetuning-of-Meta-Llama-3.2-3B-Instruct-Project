@@ -147,7 +147,7 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 ![Finetuning Pipeline](https://github.com/user-attachments/assets/bc09764b-b5a1-4614-b872-cc6d9cd88bdc)
 
 
-*Note: Fine-tuning code will be entirely modular, but I have used **Google Colab for training, if you have high-end machine make sure you execute **pipeline** in modular fashin*
+*Note: Fine-tuning code will be entirely modular, but I have used **Google Colab** for training, if you have high-end machine make sure you execute **pipeline** in modular fashin*
 
 ## Fine-tuning Pipeline 💥
 ---
