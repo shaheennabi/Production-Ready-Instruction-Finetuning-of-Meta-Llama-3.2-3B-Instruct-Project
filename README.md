@@ -144,8 +144,7 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 *This is the diagram, of how the pipeline will look:*
 
-![Finetuning Pipeline](https://github.com/user-attachments/assets/3c8c6290-0d28-4703-8f12-ab13f8000703)
-
+![Finetuning Pipeline](https://github.com/user-attachments/assets/bc09764b-b5a1-4614-b872-cc6d9cd88bdc)
 
 
 
