@@ -236,7 +236,6 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 <img width="527" alt="Pushing to s3 2" src="https://github.com/user-attachments/assets/2d944deb-b2f1-475a-834e-d462bb08fffb">
 
-
 <img width="505" alt="Pushing to s3 3" src="https://github.com/user-attachments/assets/7fd11f13-57f2-43b0-b3e9-918e89b91b12">
 
 
