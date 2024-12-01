@@ -186,6 +186,7 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 <img width="656" alt="Importing Necessary Libraries" src="https://github.com/user-attachments/assets/dfb4fdee-0513-4202-b5d1-167e15689354">
 
+
 - **FastLanguageModel**: Fine-tuned in 4-bit precision for optimized performance and reduced memory usage.
 - **SFTTrainer**: Efficiently handles the training process with large models.
 - **AutoModelForCausalLM & AutoTokenizer**: Automatically load the pre-trained model and tokenizer for causal language tasks.
@@ -199,6 +200,18 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 ###  Loading the Model
 
 <img width="640" alt="Loading  Model" src="https://github.com/user-attachments/assets/89013450-1bb1-4a29-9ad4-2a620004064e">
+
+
+- **`max_seq_length`**: Specifies the maximum token length for inputs, here set to 2048 tokens.
+- **`dtype`**: Auto-detects the optimal data type for model weights, usually `float32` or `float16`.
+- **`load_in_4bit`**: Enables 4-bit quantization, reducing memory usage while preserving model performance.
+- **model_name** = unsloth/Llama-3.2-3B-Instruct, which will be used for fine-tuning and is sourced from Unsloth.
+*We are getting **quantized_model** and **tokenizer** by passing these params into **FastLanguageModel.from_pretrained**.*
+
+
+
+
+
 
 ### Applying  Lora layers
 
