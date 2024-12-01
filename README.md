@@ -151,6 +151,42 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 ## Fine-tuning Pipeline 💥
 ---
+### Installing the required libraries
+* Unsloth gives a lot of issues while installing, so execute these code cells one by one in sequence to avoid any problems.
+
+````bash
+# Run this first (cell 1)
+!python -m pip install --upgrade pip
+!pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+!pip install xformers[torch2]  # Install xformers built for PyTorch 2.x
+!pip install "unsloth[colab] @ git+https://github.com/unslothai/unsloth.git"
+!pip install "git+https://github.com/huggingface/transformers.git"
+!pip install trl
+!pip install boto3
+````
+
+```bash
+# Run this cell (cell 2)
+!pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118  # Upgrade PyTorch to a compatible version
+!pip install xformers  # Install xformers after upgrading PyTorch
+```
+
+```bash
+# cell 3
+!pip uninstall torch torchvision torchaudio -y  # Uninstall existing PyTorch, torchvision, and torchaudio
+!pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118  # Install PyTorch, torchvision, and torchaudio with CUDA 11.8
+```
+
+```bash
+# cell 4
+!pip uninstall xformers -y
+!pip install xformers[torch2]  # Install xformers built for PyTorch 2.x
+```
+
+
+
+
+
 
 
 ---
