@@ -32,7 +32,7 @@ As a developer, I am responsible for delivering a Instruction fine-tuned **LLaMA
 
 - I will **instruct fine-tune** the model using the high-quality **Kannada dataset** from **Hugging Face** (`charanhu/kannada-instruct-dataset-390k`).  
 
-- To address the constraints of **limited GPU resources**, I will implement **QLoRA-based 4-bit precision quantization** using **BitsAndBytes**, which involves:  
+- To address the constraints of **limited GPU resources**, I will implement **QLoRA-based 4-bit precision quantization** using **Unsloth**, which involves:  
   - First **quantizing the model** to 4-bit precision to reduce computational overhead.  
   - Adding **LoRA (Low-Rank Adaptation) layers** to fine-tune the model efficiently within **Google Colab**, ensuring optimal resource utilization without compromising performance.  
 
