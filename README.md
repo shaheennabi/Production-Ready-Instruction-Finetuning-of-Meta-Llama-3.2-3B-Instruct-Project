@@ -82,7 +82,7 @@ This approach ensures a resource-efficient, scalable, and production-ready model
 **Note: This is high-level view.**
 
 
-![CI_CD Diagram (3)](https://github.com/user-attachments/assets/b2aefea2-a17e-4242-9225-8701f5bbed3c)
+![overview](https://github.com/user-attachments/assets/7b743e25-35b1-4c1e-a48c-20c62fc117ab)
 
 
 
@@ -144,7 +144,8 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 *This is the diagram, of how the pipeline will look:*
 
-![Finetuning Pipeline](https://github.com/user-attachments/assets/86052bbf-a95c-4a67-9242-f6002494d246)
+![Finetuning Pipeline](https://github.com/user-attachments/assets/bc09764b-b5a1-4614-b872-cc6d9cd88bdc)
+
 
 
 ## Fine-tuning Pipeline 💥
@@ -205,6 +206,8 @@ The output is generated and returned to the user via the Flask endpoint.
 
 ---
 ## Guide for Developers 🌿🎇✨💚🎆🌱🎇✨💚🎆 (this will be updated, post project completion)
+
+Dear **developers** pipeline is so simple, I recommend to refer to the pipeline diagram, it will give you proper look. I have seperated the pipeline into 2 segments for ease.
 
 If you want to build on top of this project, here are a few recommendations:
 
