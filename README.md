@@ -1,5 +1,4 @@
 # 🎋🌿 **Production-Ready Instruction Fine-Tuning of Meta LLaMA 3.2 3B Instruct Project** 🌿🎉  
-updating soon: 
 
 ## **Problem Statement**  
 ---  
@@ -29,7 +28,7 @@ To achieve this, we are leveraging the **Hugging Face dataset** `charanhu/kannad
 
 ### **My Role as a Developer** 🎋  
 
-As a developer, I am responsible for delivering a fine-tuned **LLaMA 3.2 3B** model that aligns with the defined **Key Performance Indicator (KPI)** objectives and ensures exceptional performance for Kannada-speaking users.  
+As a developer, I am responsible for delivering a Instruction fine-tuned **LLaMA 3.2 3B** model that aligns with the defined **Key Performance Indicator (KPI)** objectives and ensures exceptional performance for Kannada-speaking users.  
 
 - I will **instruct fine-tune** the model using the high-quality **Kannada dataset** from **Hugging Face** (`charanhu/kannada-instruct-dataset-390k`).  
 
