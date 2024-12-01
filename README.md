@@ -187,9 +187,57 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 <img width="656" alt="Importing Necessary Libraries" src="https://github.com/user-attachments/assets/dfb4fdee-0513-4202-b5d1-167e15689354">
 
+###  Loading the Model
+
+<img width="640" alt="Loading  Model" src="https://github.com/user-attachments/assets/89013450-1bb1-4a29-9ad4-2a620004064e">
+
+### Applying  Lora layers
+
+<img width="620" alt="Applying  Lora" src="https://github.com/user-attachments/assets/062a2115-d24d-4ede-9c83-2fc9665cdaa1">
+
+### Data Preparation
+
+<img width="920" alt="Dataset Preparation" src="https://github.com/user-attachments/assets/869f6569-df05-455f-bd7e-ba71dc036593">
+
+### Data Formatting(what model expects for instruction tuning)
+
+<img width="920" alt="Prompt Formatting" src="https://github.com/user-attachments/assets/58f7c5cf-945a-43d7-a9cf-670eee3261e6">
 
 
+###  Training Configurations
 
+<img width="614" alt="Training Configuration" src="https://github.com/user-attachments/assets/956acc04-ac6f-497b-9c12-9cc33b70301b">
+
+
+### Model Training
+
+<img width="856" alt="Model  Training" src="https://github.com/user-attachments/assets/075ee343-8412-4ad4-bb4b-dd569663c4fd">
+
+### Inference
+
+<img width="713" alt="Inference  1" src="https://github.com/user-attachments/assets/189c2d17-9026-4cb3-bdfb-95435b075fae">
+
+<img width="901" alt="Inference 2" src="https://github.com/user-attachments/assets/ea31462b-9e1c-4575-9120-5390cfbc23e2">
+
+### Saving the Model & Tokenizer
+
+<img width="453" alt="Saving the model and tokenizer" src="https://github.com/user-attachments/assets/f6eb0858-f51e-452d-a65b-83945537e487">
+
+### Merging base model & finetuned lora layers
+
+<img width="557" alt="Merge base model and finetuned layers" src="https://github.com/user-attachments/assets/15d66a2b-dfb9-471c-8fe0-9b13640d45e4">
+
+
+### Pushing Model & Tokenizer to S3 Bucket
+
+
+<img width="399" alt="Pushing to s3 1" src="https://github.com/user-attachments/assets/06948b95-59a6-4ad5-b530-90e075cc88f9">
+
+
+<img width="527" alt="Pushing to s3 2" src="https://github.com/user-attachments/assets/2d944deb-b2f1-475a-834e-d462bb08fffb">
+
+
+<img width="505" alt="Pushing to s3 3" src="https://github.com/user-attachments/assets/7fd11f13-57f2-43b0-b3e9-918e89b91b12">
 
 
 ---
