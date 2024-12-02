@@ -387,10 +387,7 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 - **`trainer.train()`**: Initiates the training process on the dataset, where the model is specifically trained on generating accurate responses while the instructions are handled separately. This helps improve the quality of responses in tasks where the model needs to generate coherent replies based on the input conversation context.
 
-
-### Instruction Fine-Tuning with a Focus on Response Generation
-
-In this approach, I performed instruction fine-tuning, but with a primary emphasis on **response generation** rather than directly interpreting the instruction itself. While the model is still trained to follow instructions, the core training goal is to enhance its ability to generate **contextually relevant, coherent, and accurate responses** based on the given instructions.
+Here in this approach, I performed instruction fine-tuning, but with a primary emphasis on **response generation** rather than directly interpreting the instruction itself. While the model is still trained to follow instructions, the core training goal is to enhance its ability to generate **contextually relevant, coherent, and accurate responses** based on the given instructions.
 
 The reason for focusing more on responses is to make the model **more dynamic and conversational**, ensuring that it generates high-quality outputs even when the instructions are varied or complex. Instead of explicitly focusing on how well the model understands the instructions, the priority is on improving its response generation, making it better at delivering useful, human-like answers.
 
