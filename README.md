@@ -405,6 +405,47 @@ In this methodology, although the model is still guided by instructions (e.g., "
 
 <img width="901" alt="Inference 2" src="https://github.com/user-attachments/assets/ea31462b-9e1c-4575-9120-5390cfbc23e2">
 
+
+#### Steps for Inference
+
+ **Prepare the Model for Inference**:  
+   The fine-tuned model is loaded using `FastLanguageModel.for_inference`, ensuring compatibility with Unsloth's inference pipeline.
+
+ **Define User Inputs**:  
+   Input messages are defined explicitly to avoid unnecessary system messages.  
+   **Example Input**:  
+   `"ಪರಿಸರದ ಬಗ್ಗೆ ಬರೆಯಿರಿ ಮತ್ತು ಪ್ರಬಂಧವನ್ನು ಬರೆಯಿರಿ."` (Write an essay about the environment.)
+
+ **Tokenization and Formatting**:  
+   The input is tokenized using the `tokenizer` with the following options:
+   - **`tokenize=True`**: To convert text into tokens.
+   - **`add_generation_prompt=True`**: Ensures generation starts from the assistant's perspective.
+   - **`return_tensors="pt"`**: Outputs PyTorch tensors for model compatibility.
+
+ **Generating Responses**:  
+   The fine-tuned model generates a response with:
+   - **`max_new_tokens=1024`**: Defines the maximum number of tokens in the output.
+   - **`temperature=1.5`**: Adds randomness to the output for creative generation.
+   - **`min_p=0.1`**: Filters out less probable tokens to improve relevance.
+
+ **Decoding and Post-Processing**:  
+   Outputs are decoded and cleaned by removing unwanted metadata or system messages. This ensures the response is concise and focused.
+
+ **Output Example**:  
+   The generated response aligns with the instruction, such as providing a detailed essay on the environment in the Kannada language.
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Saving the Model & Tokenizer
 
 <img width="453" alt="Saving the model and tokenizer" src="https://github.com/user-attachments/assets/f6eb0858-f51e-452d-a65b-83945537e487">
