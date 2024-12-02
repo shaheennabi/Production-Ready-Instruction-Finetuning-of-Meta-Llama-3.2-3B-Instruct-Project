@@ -269,6 +269,27 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 <img width="920" alt="Prompt Formatting" src="https://github.com/user-attachments/assets/58f7c5cf-945a-43d7-a9cf-670eee3261e6">
 
+- **Formatting Data Using Tokenizer**:  
+  - A function **`formatting_prompts_func`** is defined to format the dataset's conversation data.
+  - **Key Details**:  
+    - Uses the tokenizer **indirectly** to format conversations but does not perform tokenization.  
+    - The function applies **`tokenizer.apply_chat_template`** to each conversation, ensuring proper formatting for fine-tuning.  
+    - **Parameters in `apply_chat_template`**:  
+      - `tokenize=False`: Ensures the data is not tokenized but only formatted.  
+      - `add_generation_prompt=False`: Disables automatic generation prompts for clean data formatting.  
+
+- **Mapping Formatting Function to Dataset**:  
+  - **`dataset.map`** is used to apply the formatting function (`formatting_prompts_func`) to the entire dataset in batches.  
+  - **Output**: A new key **`text`** in the dataset containing the formatted conversation strings.
+
+- **Inspecting Formatted Data**:  
+  - A loop is used to print the first formatted item of the dataset to verify the results.  
+
+
+
+
+
+
 
 ###  Training Configurations
 
