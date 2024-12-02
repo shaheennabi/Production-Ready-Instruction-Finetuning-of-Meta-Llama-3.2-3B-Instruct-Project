@@ -295,6 +295,49 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 <img width="614" alt="Training Configuration" src="https://github.com/user-attachments/assets/956acc04-ac6f-497b-9c12-9cc33b70301b">
 
+- **Initializing Fine-Tuning with SFTTrainer**:  
+  - **Purpose**: Fine-tuning the model by training LoRA layers while keeping the quantized base model frozen.  
+
+- **Key Components**:  
+  - **`model`**:  
+    - Contains the quantized base model with LoRA layers for efficient parameter updates.  
+    - Only LoRA layers are trainable; the base model remains static.  
+  - **`tokenizer`**: Used to preprocess input data into a format compatible with the model.  
+  - **`train_dataset`**: The dataset to fine-tune the model, here set to the formatted **`dataset`**.  
+  - **`dataset_text_field`**: Specifies the field in the dataset containing formatted text data (key: **`text`**).  
+  - **`max_seq_length`**: Limits tokenized input sequences to 2048 tokens.  
+  - **`data_collator`**:  
+    - Prepares batches for training using **`DataCollatorForSeq2Seq`**, ensuring compatibility with sequence-to-sequence tasks.  
+  - **`dataset_num_proc`**: Sets parallel processing to **2 threads** for efficiency during data preparation.  
+  - **`packing`**: Disables input packing to keep data unaltered.  
+
+- **Training Arguments**:  
+  - **`per_device_train_batch_size`**: Batch size per device, here set to **4**.  
+  - **`gradient_accumulation_steps`**: Accumulates gradients for **4 steps** to simulate larger batch sizes.  
+  - **`warmup_steps`**: Gradual learning rate warm-up over **20 steps** to stabilize training.  
+  - **`max_steps`**: Limits training to **300 steps**.  
+  - **`learning_rate`**: Learning rate set to **1.5e-4**.  
+  - **`fp16` and `bf16`**: Automatically determines whether to use **16-bit floating-point (FP16)** or **bfloat16 (BF16)** precision based on hardware support.  
+  - **`logging_steps`**: Logs training progress every **10 steps**.  
+  - **`optim`**: Uses **`adamw_8bit`** for memory-efficient optimization.  
+  - **`weight_decay`**: Applies **0.02** regularization to weights for better generalization.  
+  - **`lr_scheduler_type`**: A **linear scheduler** for adjusting learning rates over time.  
+  - **`seed`**: Fixes randomness with a seed value of **3407** for reproducibility.  
+  - **`output_dir`**: Saves model checkpoints and logs in the directory **`outputs`**.  
+
+- **Final Output**:  
+  - The **`trainer`** object manages the training loop, including data preprocessing, forward/backward passes, and logging.  
+  - Fine-tunes LoRA layers to enhance the model's performance on the provided dataset.  
+
+
+
+
+
+
+
+
+
+
 
 ### Model Training
 
