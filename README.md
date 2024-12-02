@@ -488,12 +488,13 @@ In this methodology, although the model is still guided by instructions (e.g., "
 ### Pushing Model & Tokenizer to S3 Bucket
 
 
-<img width="399" alt="Pushing to s3 1" src="https://github.com/user-attachments/assets/06948b95-59a6-4ad5-b530-90e075cc88f9">
+<img width="923" alt="s3 1" src="https://github.com/user-attachments/assets/76f0d76f-b270-46c1-a2c9-b1d7232b0b72">
+
+<img width="911" alt="s3 2" src="https://github.com/user-attachments/assets/a274524a-b9cc-4f07-addc-c7c434f4f0b9">
+
+<img width="909" alt="s3 3" src="https://github.com/user-attachments/assets/b09ff2f4-da2e-492f-8586-269ce2a29ea8">
 
 
-<img width="527" alt="Pushing to s3 2" src="https://github.com/user-attachments/assets/2d944deb-b2f1-475a-834e-d462bb08fffb">
-
-<img width="505" alt="Pushing to s3 3" src="https://github.com/user-attachments/assets/7fd11f13-57f2-43b0-b3e9-918e89b91b12">
 
 
 - **AWS Credentials Setup**:  
