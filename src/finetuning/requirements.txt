@@ -1,0 +1,24 @@
+--upgrade pip
+--upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+xformers[torch2]
+unsloth[colab] @ git+https://github.com/unslothai/unsloth.git
+git+https://github.com/huggingface/transformers.git
+trl
+boto3
+
+--upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+xformers
+
+
+-U torch
+-U torchvision
+-U torchaudio
+torch
+torchvision
+torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+
+-U xformers
+xformers[torch2]
+
