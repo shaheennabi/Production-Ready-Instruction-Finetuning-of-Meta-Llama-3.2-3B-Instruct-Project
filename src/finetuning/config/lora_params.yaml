@@ -1,0 +1,16 @@
+lora_params:
+  r: 16  # LoRA rank
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+  lora_alpha: 16
+  lora_dropout: 0  # Optimized at 0
+  bias: "none"  # No additional bias terms
+  use_gradient_checkpointing: "unsloth"  # Gradient checkpointing to save memory
+  random_state: 3407
+  use_rslora: false  # Rank stabilized LoRA, can be enabled for stability
