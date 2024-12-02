@@ -450,9 +450,39 @@ In this methodology, although the model is still guided by instructions (e.g., "
 
 <img width="453" alt="Saving the model and tokenizer" src="https://github.com/user-attachments/assets/f6eb0858-f51e-452d-a65b-83945537e487">
 
+- **Save Directory**: Defines a directory to store the model and tokenizer. Creates it if it doesn’t exist.  
+- **Model Saving**: Saves the fine-tuned LoRA layers and quantized model using `save_pretrained`.  
+- **Tokenizer Saving**: Saves the tokenizer to ensure compatibility during inference.  
+- **Output Confirmation**: Prints the save path to verify successful storage.
+- 
+
+
 ### Merging base model & finetuned lora layers
 
 <img width="557" alt="Merge base model and finetuned layers" src="https://github.com/user-attachments/assets/15d66a2b-dfb9-471c-8fe0-9b13640d45e4">
+
+- **Base Model Setup**:  
+  - Loads a base model (`unsloth/Llama-3.2-3B-Instruct`) with **4-bit quantization** to reduce memory usage.  
+  - Sets the **maximum sequence length** to 2048 for handling long inputs.  
+
+- **Fine-Tuned Weights Integration**:  
+  - Loads fine-tuned LoRA weights from the specified path.  
+  - Merges LoRA weights into the base model using `merge_and_unload`, ensuring a fully integrated model with no residual adapter layers.  
+
+- **Saving the Final Model and Tokenizer**:  
+  - Saves the merged model and tokenizer to a specified directory for deployment or inference.  
+
+**Save Location**: `/content/merged_model`
+
+
+
+
+
+
+
+
+
+
 
 
 ### Pushing Model & Tokenizer to S3 Bucket
