@@ -219,6 +219,24 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 <img width="620" alt="Applying  Lora" src="https://github.com/user-attachments/assets/062a2115-d24d-4ede-9c83-2fc9665cdaa1">
 
+- **`r`**: LoRA rank, set to `16`, determines the size of the low-rank adaptation.
+- **`target_modules`**: Specifies the layers in the model to which LoRA should be applied, including `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj`, and `down_proj`.
+- **`lora_alpha`**: Scaling factor for LoRA layers, set to `16` for efficient weight updates.
+- **`lora_dropout`**: Dropout rate for LoRA layers, set to `0` here for optimization.
+- **`bias`**: Indicates whether additional bias terms should be added; set to `"none"` for simplicity.
+- **`use_gradient_checkpointing`**: Uses Unsloth’s gradient checkpointing method to reduce memory usage during training.
+- **`random_state`**: Sets the random seed for reproducibility, here set to `3407`.
+- **`use_rslora`**: Rank stabilized LoRA, disabled here (`False`) but can be enabled for increased stability.
+
+*The **lora_layers_and_quantized_model** are obtained by applying these parameters through the **FastLanguageModel.get_peft_model** function.*
+
+
+
+
+
+
+
+
 ### Data Preparation
 
 <img width="920" alt="Dataset Preparation" src="https://github.com/user-attachments/assets/869f6569-df05-455f-bd7e-ba71dc036593">
