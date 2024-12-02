@@ -241,6 +241,30 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 <img width="920" alt="Dataset Preparation" src="https://github.com/user-attachments/assets/869f6569-df05-455f-bd7e-ba71dc036593">
 
+- **Loading Dataset**:  
+  - The Kannada Instruct Dataset is loaded using **`load_dataset`** from the `datasets` library.  
+  - **Dataset Source**: `"charanhu/kannada-instruct-dataset-390-k"`.  
+  - **Split**: The training split is used (`split="train"`).
+
+- **Standardizing Dataset**:  
+  - The `standardize_sharegpt` function from **`unsloth.chat_templates`** is applied to prepare the dataset for training.  
+  - **Purpose**: Ensures the dataset aligns with ShareGPT-like formatting standards, making it compatible for conversational AI fine-tuning.  
+  - **Key Benefits**:  
+    - Cleans and structures the dataset for consistency.  
+    - Maps raw inputs and outputs into an organized format (e.g., system messages, user queries, and assistant responses).  
+    - Reduces preprocessing overhead during model fine-tuning.
+
+- **Inspecting Data**:  
+  - A loop is used to print the first item of the dataset to understand its structure and verify standardization.  
+
+
+
+
+
+
+
+
+
 ### Data Formatting(what model expects for instruction tuning)
 
 <img width="920" alt="Prompt Formatting" src="https://github.com/user-attachments/assets/58f7c5cf-945a-43d7-a9cf-670eee3261e6">
