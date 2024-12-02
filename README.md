@@ -496,6 +496,20 @@ In this methodology, although the model is still guided by instructions (e.g., "
 <img width="505" alt="Pushing to s3 3" src="https://github.com/user-attachments/assets/7fd11f13-57f2-43b0-b3e9-918e89b91b12">
 
 
+- **AWS Credentials Setup**:  
+  - Environment variables are configured for **AWS Access Key**, **Secret Key**, and **Region** to enable secure access to AWS services.  
+
+- **S3 Client Initialization**:  
+  - Configures `boto3` to interact with S3 using the specified credentials.  
+
+- **Specify Local and S3 Paths**:  
+  - **Local Path**: `/content/merged_model` (contains fine-tuned model and tokenizer files).  
+  - **S3 Bucket**: `instruct` with a folder prefix `files/` to organize uploads.  
+
+- **Selective File Upload**:  
+  - Only uploads `model.safetensors` and `tokenizer.json` files, ensuring other files are skipped.  
+
+
 ---
 
 
