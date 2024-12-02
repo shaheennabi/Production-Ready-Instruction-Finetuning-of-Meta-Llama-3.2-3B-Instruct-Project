@@ -379,6 +379,13 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 
 <img width="856" alt="Model  Training" src="https://github.com/user-attachments/assets/075ee343-8412-4ad4-bb4b-dd569663c4fd">
 
+- **`train_on_responses_only`**: This function from `unsloth.chat_templates` modifies the training loop to specifically focus on the model's responses, excluding the instructions. This technique allows the model to better specialize in generating responses rather than understanding instructions, which can be useful in fine-tuning models for tasks like dialogue generation or question answering.
+
+- **`instruction_part`**: Specifies the tokenized start and end markers for the user instruction. This helps to differentiate the instruction from the response, so the model learns to ignore the instruction when fine-tuning and focus only on generating the appropriate response.
+
+- **`response_part`**: Specifies the tokenized start and end markers for the model's response. By isolating the response, the model is encouraged to generate responses that align with the given instruction but is not directly trained on the instruction itself during the process.
+
+- **`trainer.train()`**: Initiates the training process on the dataset, where the model is specifically trained on generating accurate responses while the instructions are handled separately. This helps improve the quality of responses in tasks where the model needs to generate coherent replies based on the input conversation context.
 
 
 
