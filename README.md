@@ -559,7 +559,7 @@ When a user enters a prompt via the Flask Web UI:
 The output is generated and returned to the user via the Flask endpoint.
 
 ---
-## Guide for Developers 🌿🎇✨💚🎆🌱🎇✨💚🎆 (this will be updated, post project completion)
+## Guide for Developers 🌿🎇✨💚🎆🌱🎇✨💚🎆 
 
 Dear **developers** pipeline is so simple, I recommend to refer to the pipeline diagram, it will give you proper look. I have seperated the pipeline into 2 segments for ease.
 
