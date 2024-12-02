@@ -311,19 +311,55 @@ Remember: For this project **Pipeline** is going to be seprated in two different
   - **`dataset_num_proc`**: Sets parallel processing to **2 threads** for efficiency during data preparation.  
   - **`packing`**: Disables input packing to keep data unaltered.  
 
-- **Training Arguments**:  
-  - **`per_device_train_batch_size`**: Batch size per device, here set to **4**.  
-  - **`gradient_accumulation_steps`**: Accumulates gradients for **4 steps** to simulate larger batch sizes.  
-  - **`warmup_steps`**: Gradual learning rate warm-up over **20 steps** to stabilize training.  
-  - **`max_steps`**: Limits training to **300 steps**.  
-  - **`learning_rate`**: Learning rate set to **1.5e-4**.  
-  - **`fp16` and `bf16`**: Automatically determines whether to use **16-bit floating-point (FP16)** or **bfloat16 (BF16)** precision based on hardware support.  
-  - **`logging_steps`**: Logs training progress every **10 steps**.  
-  - **`optim`**: Uses **`adamw_8bit`** for memory-efficient optimization.  
-  - **`weight_decay`**: Applies **0.02** regularization to weights for better generalization.  
-  - **`lr_scheduler_type`**: A **linear scheduler** for adjusting learning rates over time.  
-  - **`seed`**: Fixes randomness with a seed value of **3407** for reproducibility.  
-  - **`output_dir`**: Saves model checkpoints and logs in the directory **`outputs`**.  
+### **`TrainingArguments`** Parameters:
+
+- **`per_device_train_batch_size`**:  
+  - Defines the number of training samples processed simultaneously on each GPU or CPU.  
+  - In this case, **4 samples per device**, which means if multiple GPUs are used, the total effective batch size will be multiplied by the number of GPUs.  
+
+- **`gradient_accumulation_steps`**:  
+  - Accumulates gradients over **4 mini-batches** before performing a single optimizer step.  
+  - This allows for the simulation of a larger batch size while using less memory, effectively making the batch size = `per_device_train_batch_size × gradient_accumulation_steps`.  
+  - Example: Here, the effective batch size becomes **4 × 4 = 16**.  
+
+- **`warmup_steps`**:  
+  - Gradually increases the learning rate over **20 steps** at the beginning of training.  
+  - Prevents sudden large updates to weights, stabilizing training and reducing the risk of exploding gradients.  
+
+- **`max_steps`**:  
+  - Specifies the **maximum number of training steps**.  
+  - Training will terminate after completing **300 steps**, regardless of the number of epochs completed.  
+
+- **`learning_rate`**:  
+  - Controls the rate at which model weights are updated.  
+  - A smaller value like **1.5e-4** ensures slow and stable convergence, especially critical for fine-tuning large models.  
+
+- **`fp16` and `bf16`**:  
+  - **`fp16`**: Mixed-precision training using 16-bit floating-point numbers, which speeds up training and reduces memory usage.  
+  - **`bf16`**: Alternative to `fp16`, supported on newer hardware like **NVIDIA A100 GPUs**, with better numerical stability.  
+  - **Logic**: If the system supports **`bfloat16`**, it will use it; otherwise, it defaults to **`fp16`**.  
+
+- **`logging_steps`**:  
+  - Logs metrics (e.g., loss, learning rate) every **10 steps**, helping monitor training progress.  
+
+- **`optim`**:  
+  - Specifies the optimizer used for weight updates, here **`adamw_8bit`**, which is a memory-efficient version of the Adam optimizer.  
+  - Suitable for training large models with reduced memory usage while maintaining performance.  
+
+- **`weight_decay`**:  
+  - Applies a regularization penalty of **0.02** to model weights, helping prevent overfitting.  
+
+- **`lr_scheduler_type`**:  
+  - Adjusts the learning rate dynamically during training.  
+  - **`linear` scheduler**: Decreases the learning rate linearly from its initial value to zero as training progresses.  
+
+- **`seed`**:  
+  - Sets the random seed to **3407** for ensuring reproducibility.  
+  - Fixes randomness in data shuffling, weight initialization, and other stochastic processes.  
+
+- **`output_dir`**:  
+  - Specifies the directory where training outputs (e.g., model checkpoints, logs) are saved.  
+  - Example: All artifacts will be stored in the folder **`outputs`**.  
 
 - **Final Output**:  
   - The **`trainer`** object manages the training loop, including data preprocessing, forward/backward passes, and logging.  
@@ -342,6 +378,14 @@ Remember: For this project **Pipeline** is going to be seprated in two different
 ### Model Training
 
 <img width="856" alt="Model  Training" src="https://github.com/user-attachments/assets/075ee343-8412-4ad4-bb4b-dd569663c4fd">
+
+
+
+
+
+
+
+
 
 ### Inference
 
