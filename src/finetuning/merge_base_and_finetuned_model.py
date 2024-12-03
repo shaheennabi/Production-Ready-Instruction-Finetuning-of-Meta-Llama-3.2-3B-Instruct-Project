@@ -14,10 +14,10 @@ class MergeModels:
             self.model_trainer = ModelTrainer()
 
             # Load the quantized model and tokenizer from ModelLoader
-            self.quantized_model, self.tokenizer = self.model_loader.initiate_model_loader()
+            self.quantized_model, _ = self.model_loader.initiate_model_loader()
 
             # Load the finetuned model and tokenizer from ModelTrainer
-            self.finetuned_model, _ = self.model_trainer.initiate_model_trainer()  # No need to use tokenizer here
+            self.finetuned_model, self.tokenizer = self.model_trainer.initiate_model_trainer()  # No need to use tokenizer here
 
             logging.info("Models and Tokenizers Loaded Successfully")
 
