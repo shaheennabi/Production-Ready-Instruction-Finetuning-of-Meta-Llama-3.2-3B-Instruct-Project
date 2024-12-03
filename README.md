@@ -500,21 +500,9 @@ In this methodology, although the model is still guided by instructions (e.g., "
 ---
 ## Guide for Developers 🌿🎇✨💚🎆🌱🎇✨💚🎆 
 
-Dear **developers** pipeline is so simple, I recommend to refer to the pipeline diagram, it will give you proper look. I have seperated the pipeline into 2 segments for ease.
-
-If you want to build on top of this project, here are a few recommendations:
-
-### Deployment Pipeline 🌱
-The deployment pipeline will remain the same as outlined in the project. You can follow the same steps to build, test, and deploy the model using Docker, ECR, and EC2.
-
-### Scripts for Deployment 📂
-All the necessary scripts for deployment are available in the `scripts` folder:
-
-- `ecr_scripts.sh`: For managing Docker images and pushing them to AWS ECR.
-- `ec2_scripts.sh`: For deploying and running the Docker container on EC2.
 
 ### Fine-tuning 🌿
-I recommend performing fine-tuning in Google Colab notebooks to save on computational resources. Colab provides a free GPU, making it an excellent environment for model fine-tuning.
+Dear **developer** I recommend performing fine-tuning in Google Colab notebooks to save on computational resources. Colab provides a free GPU, making it an excellent environment for model fine-tuning.
 
 ### Environment Setup 🌱
 To set up your environment for development or deployment:
@@ -545,7 +533,7 @@ To set up your environment for development or deployment:
     ```
 
 ### Tree Structure 🌱
-To keep the README concise and organized, the detailed project tree structure is stored in a separate file: [tree_structure.md](tree_structure.md). This helps prevent the README from becoming too long and difficult to navigate.
+
 
 
 
