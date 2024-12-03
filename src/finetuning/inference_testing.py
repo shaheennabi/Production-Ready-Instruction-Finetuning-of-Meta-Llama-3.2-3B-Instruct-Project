@@ -51,7 +51,7 @@ class Inference:
             for response in decoded_output:
                 response = response.split("user\n\n")[1] if "user\n\n" in response else response
                 response = response.split("assistant\n\n")[1] if "assistant\n\n" in response else response
-                clean_output.append(response.strip())
+                clean_output.append(response)
 
             # Print the cleaned output
             logging.info("Response generation successful.")
