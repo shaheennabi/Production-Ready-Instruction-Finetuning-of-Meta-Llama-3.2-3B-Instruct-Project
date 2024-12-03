@@ -13,7 +13,7 @@ class ModelTrainer:
             
             # Initialize Trainer and get training configuration
             self.trainer = Trainer()
-            self.training_config = self.trainer.initiate_trainer()
+            self.trainer = self.trainer.initiate_trainer()
             logging.info("Training configuration loaded successfully.")
             
             # Initialize LoRA and model components
@@ -40,7 +40,7 @@ class ModelTrainer:
             
             # Train using the provided template
             start_training = train_on_responses_only(
-                self.training_config,
+                self.trainer,
                 instruction_part="<|start_header_id|>user<|end_header_id|>\n\n",
                 response_part="<|start_header_id|>assistant<|end_header_id|>\n\n",
             )
