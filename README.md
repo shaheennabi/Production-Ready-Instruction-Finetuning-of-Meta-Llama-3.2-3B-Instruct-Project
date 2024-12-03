@@ -502,35 +502,9 @@ In this methodology, although the model is still guided by instructions (e.g., "
 
 
 ### Fine-tuning 🌿
-Dear **developer** I recommend performing fine-tuning in Google Colab notebooks to save on computational resources. Colab provides a free GPU, making it an excellent environment for model fine-tuning.
 
-### Environment Setup 🌱
-To set up your environment for development or deployment:
+Dear **developers** if you are looking to build a similar project, I recommend using Google Colab as your primary environment for training and fine-tuning. Colab provides free access to GPUs (like T4 or P100) which can help speed up the process. For efficient fine-tuning, consider using PEFT (Parameter Efficient Fine-Tuning) techniques like LoRA, which only updates a subset of the model's parameters, reducing memory usage and computational cost. You can load pre-trained models and fine-tune them in 4-bit precision, which makes training more resource-efficient. Be sure to format your dataset according to the Kannada Instruct dataset format for instruction-based tasks.
 
-1. **Create Conda Environment**:
-    - Run the following command to create a Conda environment:
-    ```bash
-    conda create -n <env_name> python=3.10
-    ```
-
-2. **Activate the Environment**:
-    - Activate the newly created environment:
-    ```bash
-    conda activate <env_name>
-    ```
-
-3. **Install Dependencies**:
-    - Install the necessary dependencies listed in `requirements.txt`:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. **Environment Variables**:
-    - Set up environment variables for AWS and other credentials. You can use `.env` files or export them directly in your terminal:
-    ```bash
-    export AWS_ACCESS_KEY_ID=<your_access_key>
-    export AWS_SECRET_ACCESS_KEY=<your_secret_key>
-    ```
 
 ### Tree Structure 🌱
 
