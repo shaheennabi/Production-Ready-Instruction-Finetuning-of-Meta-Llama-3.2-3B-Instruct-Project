@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Inference</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 100%;
+            max-width: 500px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 8px;
+            display: block;
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            resize: none;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .response {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Engage with the Model</h2>
+        <form id="questionForm">
+            <label for="userQuestion">Enter Your Prompt:</label>
+            <textarea id="userQuestion" placeholder="Type your question here..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="response" id="responseDiv">
+            <h3>Response:</h3>
+            <p id="responseText"></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('questionForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const userQuestion = document.getElementById('userQuestion').value.trim();
+
+            if (userQuestion) {
+                try {
+                    // Send the question to the Flask API endpoint
+                    const response = await fetch('/ask', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ question: userQuestion }),
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Failed to get an answer. Status: ' + response.status);
+                    }
+
+                    const data = await response.json();
+
+                    // Display the response
+                    document.getElementById('responseDiv').style.display = 'block';
+                    document.getElementById('responseText').textContent = data.answer || "No response received.";
+                } catch (error) {
+                    alert('An error occurred: ' + error.message);
+                }
+            } else {
+                alert('Please enter a prompt.');
+            }
+        });
+    </script>
+</body>
+</html>
