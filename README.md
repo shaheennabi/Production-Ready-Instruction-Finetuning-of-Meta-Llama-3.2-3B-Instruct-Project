@@ -508,7 +508,57 @@ Dear **developers** if you are looking to build a similar project, I recommend u
 
 ### Tree Structure 🌱
 
+```bash
+├── PRODUCTION-READY-INSTRUCTION-FINETUNING-OF-META-Llama-3.2-3B Instruct
+├── .github/
+│   └── FUNDING.yml
+├── docs/
+│   ├── 1. Understanding Instruction Finetuning.md
+│   ├── 2. reward_model.md
+│   ├── 3. RLHF with PPO.md
+│   ├── 4. Direct Preference Optimization.md
+│   ├── 5. Understanding ULMA.md
+│   ├── 6. Parameter Efficient Finetuning.md
+│   ├── 7. Low Rank Adaptation(LORA).md
+│   └── 8. Quantized-Low Rank Adaptation(Qlora).md
+├── flowcharts/
+│   ├── Finetuning Pipeline.jpg
+│   └── overview.jpg
+├── log/
+│   └── timestamp(log)
+├── notebooks/
+│   └── Instruct_Tuning_Llama3.2-3B_instruct.ipynb
+├── src/finetuning/
+│   ├── config/
+│   │   ├── lora_params.yaml
+│   │   ├── model_loading_params.yaml
+│   │   └── trainer_params.yaml
+│   ├── exception/
+│   │   └── __init__.py
+│   ├── logger/
+│   │   └── __init__.py
+│   ├── utils/
+│   │   └── __init__.py
+│   ├── applying_lora.py
+│   ├── data_formatting.py
+│   ├── data_preparation.py
+│   ├── demo.py
+│   ├── inference_testing.py
+│   ├── merge_base_and_finetuned_model.py
+│   ├── model_and_tokenizer_pusher_to_s3.py
+│   ├── model_loader.py
+│   ├── model_trainer.py
+│   └── training_config.py
+├── .gitignore
+├── demo.py
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── setup.py
+└── template.py
 
+
+```
 
 
 Happy coding and deploying! 🎉💚
