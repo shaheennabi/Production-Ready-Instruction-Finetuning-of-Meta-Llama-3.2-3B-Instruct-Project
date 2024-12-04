@@ -61,7 +61,7 @@ I will collaborate closely with the **AI Systems Team** and **prompt engineers**
 ---
 ## **My Approach** 🚀  
 
-The **instruct-based fine-tuning** process will adhere to industry standards, ensuring the model is rigorously tested before being deployed for inference.  
+The **instruct-based fine-tuning** process will adhere to industry standards, ensuring the model is perfectly tested after training.  
 
 ### **Steps in My Approach**  
 
@@ -73,7 +73,7 @@ The **instruct-based fine-tuning** process will adhere to industry standards, en
    - Leverage **Google Colab's limited GPU resources** to achieve faster training without compromising the quality of the fine-tuning process.  
 
 3. **Model Deployment and Feedback Loop**  
-   - Once the model is fine-tuned, it will be uploaded to an **S3 bucket** for easy access and deployment.  
+   - Once the model is fine-tuned, it will be uploaded to an **S3 bucket** with **tokenizer** for easy access for deployment team.  
 
 This approach ensures a resource-efficient, scalable, and production-ready model tailored to meet the needs of Kannada-speaking users.  
 
@@ -94,7 +94,6 @@ The project faced several challenges, including:
 
 - **Limited GPU Resources**: Fine-tuning a large model was challenging due to the scarcity of available GPU resources.  
 - **Timeline Constraints**: A tight project timeline, driven by the large user base, required rapid action and attention.  
-- **Model Inference on AWS**: Running inference on AWS incurred high costs, raising concerns around both **storage** and **compute expenses**.  
 
 
 
@@ -103,8 +102,7 @@ The project faced several challenges, including:
 - To address **GPU limitations**, I utilized **Google Colab** with **4-bit precision quantization** to enable efficient fine-tuning within the available resource constraints.  
 
 - I worked closely with **prompt engineers** to accelerate the fine-tuning process, ensuring we met the project deadline despite the tight timeline.  
-
-- For inference, I optimized model deployment by implementing a **multi-stage Docker setup** using **Docker Compose**, which helped reduce image size and enhance efficiency, lowering operational costs.  
+  
 
 
 ---
@@ -455,7 +453,7 @@ In this methodology, although the model is still guided by instructions (e.g., "
   - Merges LoRA weights into the base model using `merge_and_unload`, ensuring a fully integrated model with no residual adapter layers.  
 
 - **Saving the Final Model and Tokenizer**:  
-  - Saves the merged model and tokenizer to a specified directory for deployment or inference.  
+  - Saves the merged model and tokenizer to a specified directory.  
 
 **Save Location**: `/content/merged_model`
 
