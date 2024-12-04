@@ -561,7 +561,7 @@ Dear **developers** if you are looking to build a similar project, I recommend u
 ```
 
 
-Happy coding and deploying! 🎉💚
+Happy coding and finetuning! 🎉💚
 
 🎆💚✨🎉🎇💚🎆✨
 
