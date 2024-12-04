@@ -493,9 +493,7 @@ In this methodology, although the model is still guided by instructions (e.g., "
 - **Selective File Upload**:  
   - Only uploads `model.safetensors` and `tokenizer.json` files, ensuring other files are skipped.  
 
----
-*Later, I will add inference-related files, and all processes will be executed in AWS SageMaker*
----
+
 ## Guide for Developers 🌿🎇✨💚🎆🌱🎇✨💚🎆 
 
 
