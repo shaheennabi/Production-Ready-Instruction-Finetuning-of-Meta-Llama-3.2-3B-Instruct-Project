@@ -492,8 +492,10 @@ In this methodology, although the model is still guided by instructions (e.g., "
 
 - **Selective File Upload**:  
   - Only uploads `model.safetensors` and `tokenizer.json` files, ensuring other files are skipped.  
+---
+## Video Demo
 
-
+---
 ## Guide for Developers 🌿🎇✨💚🎆🌱🎇✨💚🎆 
 
 
