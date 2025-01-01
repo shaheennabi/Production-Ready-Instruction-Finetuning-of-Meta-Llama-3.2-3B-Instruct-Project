@@ -1,5 +1,8 @@
 # 🎋🌿 **Production-Ready Instruction Fine-Tuning of Meta LLaMA 3.2 3B Instruct Project** 🌿🎉  
 
+### Discussions box is open, you can ask anything & i will accept any pull request feel free to contribute (you can later use this project in your resume etc..) thanks
+
+
 ## **Problem Statement**  
 ---  
 *Note: This project simulates an industry-standard scenario where I am assuming the role of a developer at XYZ Company. The LLaMA 3.2 (3B) model has been successfully deployed in production as part of our product. However, to better serve our large user base of Kannada speakers, fine-tuning the model on a Kannada-specific conversation dataset has become essential.*  
