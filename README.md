@@ -130,7 +130,7 @@ The project faced several challenges, including:
 ![Finetuning Pipeline](https://github.com/user-attachments/assets/bc09764b-b5a1-4614-b872-cc6d9cd88bdc)
 
 
-*Note: Fine-tuning code will be entirely modular, but I have used **Google Colab** for training, if you have high-end machine make sure you execute **pipeline** in modular fashin*
+*Note: Fine-tuning code will be entirely modular, but I have used **Google Colab** for training, if you have high-end machine make sure you execute **pipeline** in modular fashion*
 
 ## Fine-tuning Pipeline 💥
 **Note:** The fine-tuning pipeline code is modularized in the `src/finetuning` folder of this repository. If you have access to **high-performance resources** like AWS SageMaker or high-end GPUs, you can execute the modularized files in sequence: start with the **Trainer** to fine-tune the model, then proceed to **Inference** for generating predictions, followed by the **Merge Models** file to combine the fine-tuned model with the base model, and finally, use the **Push to S3** script to upload the final model and tokenizer to your S3 bucket. However, if you lack access to higher-end GPUs or a cloud budget, I recommend using **Google Colab's free tier**. In this case, skip the modularized part and directly execute the provided Jupyter Notebook inside `notebooks/` to fine-tune the model, then upload the `model` and `tokenizer` directly to S3 from the Colab notebook. **Caution:** The modularized pipeline has not been tested thoroughly because I do not have access to high-end compute resources. If you encounter issues while running the pipeline, please raise an issue in the repository, and I will address it immediately.
